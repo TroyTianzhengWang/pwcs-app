@@ -1,0 +1,6 @@
+framework module Pods_pwcs {
+  umbrella header "Pods-pwcs-umbrella.h"
+
+  export *
+  module * { export * }
+}

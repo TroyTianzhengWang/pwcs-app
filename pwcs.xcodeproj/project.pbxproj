@@ -7,21 +7,63 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22688077F4673C7DBE25155F /* Pods_pwcs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0ACD84074B85E23755767CE /* Pods_pwcs.framework */; };
+		CF001EED2013D4CB00EF7EAD /* Speaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF001EEC2013D4CB00EF7EAD /* Speaker.swift */; };
+		CF001EEF2013DCDE00EF7EAD /* DataServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF001EEE2013DCDE00EF7EAD /* DataServices.swift */; };
+		CF001EF12013E0A300EF7EAD /* Panel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF001EF02013E0A300EF7EAD /* Panel.swift */; };
+		CF001F0120144EBE00EF7EAD /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF001F0020144EBE00EF7EAD /* Event.swift */; };
+		CF2E6A22201152D3004FA9E9 /* SpeakerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2E6A21201152D3004FA9E9 /* SpeakerCell.swift */; };
+		CF2E6A2420115319004FA9E9 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2E6A2320115319004FA9E9 /* EventCell.swift */; };
 		CF573C3B200C71F400A980CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF573C3A200C71F400A980CC /* AppDelegate.swift */; };
-		CF573C3D200C71F400A980CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF573C3C200C71F400A980CC /* ViewController.swift */; };
-		CF573C40200C71F400A980CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF573C3E200C71F400A980CC /* Main.storyboard */; };
 		CF573C42200C71F400A980CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF573C41200C71F400A980CC /* Assets.xcassets */; };
 		CF573C45200C71F400A980CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF573C43200C71F400A980CC /* LaunchScreen.storyboard */; };
+		CF573C51200C73C200A980CC /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF573C50200C73C200A980CC /* MainTabBarController.swift */; };
+		CF573C53200C74BF00A980CC /* AgendaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF573C52200C74BF00A980CC /* AgendaVC.swift */; };
+		CF573C55200C74DB00A980CC /* SpeakersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF573C54200C74DB00A980CC /* SpeakersVC.swift */; };
+		CF573C57200C750700A980CC /* HelpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF573C56200C750700A980CC /* HelpVC.swift */; };
+		CF573C59200C768400A980CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF573C58200C768400A980CC /* Main.storyboard */; };
+		CF573C63200C889300A980CC /* FaqVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF573C62200C889300A980CC /* FaqVC.swift */; };
+		CF573C69200C9CE500A980CC /* ScheduleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF573C68200C9CE500A980CC /* ScheduleVC.swift */; };
+		CF573C6B200C9D1300A980CC /* EventsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF573C6A200C9D1300A980CC /* EventsVC.swift */; };
+		CF573C6D200C9D4000A980CC /* PanelsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF573C6C200C9D4000A980CC /* PanelsVC.swift */; };
+		CF573C6F200C9D7600A980CC /* PanelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF573C6E200C9D7600A980CC /* PanelVC.swift */; };
+		CF573C72200C9DE900A980CC /* EventVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF573C71200C9DE900A980CC /* EventVC.swift */; };
+		CF573C74200C9E1600A980CC /* SpeakerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF573C73200C9E1600A980CC /* SpeakerVC.swift */; };
+		CF85C49C200CA16F008B02CB /* SpeakersListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85C49B200CA16F008B02CB /* SpeakersListVC.swift */; };
+		CF85C4A0200D0921008B02CB /* PanelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85C49F200D0921008B02CB /* PanelCell.swift */; };
+		CF8E1283204F23A300247531 /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8E1282204F23A300247531 /* AboutVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		24C3D2D22A99D0A9B411D38F /* Pods-pwcs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pwcs.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pwcs/Pods-pwcs.debug.xcconfig"; sourceTree = "<group>"; };
+		962FD34CD960603B63DAF917 /* Pods-pwcs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pwcs.release.xcconfig"; path = "Pods/Target Support Files/Pods-pwcs/Pods-pwcs.release.xcconfig"; sourceTree = "<group>"; };
+		C0ACD84074B85E23755767CE /* Pods_pwcs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pwcs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF001EEC2013D4CB00EF7EAD /* Speaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Speaker.swift; sourceTree = "<group>"; };
+		CF001EEE2013DCDE00EF7EAD /* DataServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataServices.swift; sourceTree = "<group>"; };
+		CF001EF02013E0A300EF7EAD /* Panel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Panel.swift; sourceTree = "<group>"; };
+		CF001F0020144EBE00EF7EAD /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		CF2E6A21201152D3004FA9E9 /* SpeakerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerCell.swift; sourceTree = "<group>"; };
+		CF2E6A2320115319004FA9E9 /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
 		CF573C37200C71F400A980CC /* pwcs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pwcs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF573C3A200C71F400A980CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CF573C3C200C71F400A980CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CF573C3F200C71F400A980CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CF573C41200C71F400A980CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF573C44200C71F400A980CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF573C46200C71F400A980CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF573C50200C73C200A980CC /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		CF573C52200C74BF00A980CC /* AgendaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaVC.swift; sourceTree = "<group>"; };
+		CF573C54200C74DB00A980CC /* SpeakersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakersVC.swift; sourceTree = "<group>"; };
+		CF573C56200C750700A980CC /* HelpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpVC.swift; sourceTree = "<group>"; };
+		CF573C58200C768400A980CC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		CF573C62200C889300A980CC /* FaqVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaqVC.swift; sourceTree = "<group>"; };
+		CF573C68200C9CE500A980CC /* ScheduleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleVC.swift; sourceTree = "<group>"; };
+		CF573C6A200C9D1300A980CC /* EventsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsVC.swift; sourceTree = "<group>"; };
+		CF573C6C200C9D4000A980CC /* PanelsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelsVC.swift; sourceTree = "<group>"; };
+		CF573C6E200C9D7600A980CC /* PanelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelVC.swift; sourceTree = "<group>"; };
+		CF573C71200C9DE900A980CC /* EventVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventVC.swift; sourceTree = "<group>"; };
+		CF573C73200C9E1600A980CC /* SpeakerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerVC.swift; sourceTree = "<group>"; };
+		CF85C49B200CA16F008B02CB /* SpeakersListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakersListVC.swift; sourceTree = "<group>"; };
+		CF85C49F200D0921008B02CB /* PanelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelCell.swift; sourceTree = "<group>"; };
+		CF8E1282204F23A300247531 /* AboutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +71,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22688077F4673C7DBE25155F /* Pods_pwcs.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E4F966617299BCFAD045636 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				24C3D2D22A99D0A9B411D38F /* Pods-pwcs.debug.xcconfig */,
+				962FD34CD960603B63DAF917 /* Pods-pwcs.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5889280D17B57B13BD8FF2C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0ACD84074B85E23755767CE /* Pods_pwcs.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CF573C2E200C71F400A980CC = {
 			isa = PBXGroup;
 			children = (
 				CF573C39200C71F400A980CC /* pwcs */,
 				CF573C38200C71F400A980CC /* Products */,
+				0E4F966617299BCFAD045636 /* Pods */,
+				5889280D17B57B13BD8FF2C1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +116,89 @@
 		CF573C39200C71F400A980CC /* pwcs */ = {
 			isa = PBXGroup;
 			children = (
+				CF573C4F200C72AF00A980CC /* Services */,
+				CF573C4E200C72A900A980CC /* Controllers */,
+				CF573C4D200C72A300A980CC /* Views */,
+				CF573C4C200C728E00A980CC /* Models */,
 				CF573C3A200C71F400A980CC /* AppDelegate.swift */,
-				CF573C3C200C71F400A980CC /* ViewController.swift */,
-				CF573C3E200C71F400A980CC /* Main.storyboard */,
+				CF573C58200C768400A980CC /* Main.storyboard */,
 				CF573C41200C71F400A980CC /* Assets.xcassets */,
 				CF573C43200C71F400A980CC /* LaunchScreen.storyboard */,
 				CF573C46200C71F400A980CC /* Info.plist */,
 			);
 			path = pwcs;
+			sourceTree = "<group>";
+		};
+		CF573C4C200C728E00A980CC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CF001EEC2013D4CB00EF7EAD /* Speaker.swift */,
+				CF001EF02013E0A300EF7EAD /* Panel.swift */,
+				CF001F0020144EBE00EF7EAD /* Event.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CF573C4D200C72A300A980CC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CF85C49F200D0921008B02CB /* PanelCell.swift */,
+				CF2E6A21201152D3004FA9E9 /* SpeakerCell.swift */,
+				CF2E6A2320115319004FA9E9 /* EventCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CF573C4E200C72A900A980CC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CF573C70200C9D7D00A980CC /* Details */,
+				CF573C67200C9CA100A980CC /* Pages */,
+				CF573C66200C9C7700A980CC /* Tabs */,
+				CF573C50200C73C200A980CC /* MainTabBarController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CF573C4F200C72AF00A980CC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CF001EEE2013DCDE00EF7EAD /* DataServices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CF573C66200C9C7700A980CC /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				CF573C52200C74BF00A980CC /* AgendaVC.swift */,
+				CF573C54200C74DB00A980CC /* SpeakersVC.swift */,
+				CF573C56200C750700A980CC /* HelpVC.swift */,
+			);
+			path = Tabs;
+			sourceTree = "<group>";
+		};
+		CF573C67200C9CA100A980CC /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				CF573C62200C889300A980CC /* FaqVC.swift */,
+				CF573C68200C9CE500A980CC /* ScheduleVC.swift */,
+				CF573C6A200C9D1300A980CC /* EventsVC.swift */,
+				CF573C6C200C9D4000A980CC /* PanelsVC.swift */,
+				CF85C49B200CA16F008B02CB /* SpeakersListVC.swift */,
+				CF8E1282204F23A300247531 /* AboutVC.swift */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		CF573C70200C9D7D00A980CC /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				CF573C6E200C9D7600A980CC /* PanelVC.swift */,
+				CF573C71200C9DE900A980CC /* EventVC.swift */,
+				CF573C73200C9E1600A980CC /* SpeakerVC.swift */,
+			);
+			path = Details;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +208,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CF573C49200C71F400A980CC /* Build configuration list for PBXNativeTarget "pwcs" */;
 			buildPhases = (
+				E721D11F016B232C768AA422 /* [CP] Check Pods Manifest.lock */,
 				CF573C33200C71F400A980CC /* Sources */,
 				CF573C34200C71F400A980CC /* Frameworks */,
 				CF573C35200C71F400A980CC /* Resources */,
+				E522D56DB1B2DBCC2C166FCF /* [CP] Embed Pods Frameworks */,
+				9E2D3F07D0F2E73E3B5204C3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,35 +263,116 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF573C59200C768400A980CC /* Main.storyboard in Resources */,
 				CF573C45200C71F400A980CC /* LaunchScreen.storyboard in Resources */,
 				CF573C42200C71F400A980CC /* Assets.xcassets in Resources */,
-				CF573C40200C71F400A980CC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9E2D3F07D0F2E73E3B5204C3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pwcs/Pods-pwcs-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E522D56DB1B2DBCC2C166FCF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-pwcs/Pods-pwcs-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AEAccordion/AEAccordion.framework",
+				"${BUILT_PRODUCTS_DIR}/ExpandableCell/ExpandableCell.framework",
+				"${BUILT_PRODUCTS_DIR}/PagingMenuController/PagingMenuController.framework",
+				"${BUILT_PRODUCTS_DIR}/Savory/Savory.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftHEXColors/SwiftHEXColors.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftIcons/SwiftIcons.framework",
+				"${BUILT_PRODUCTS_DIR}/TimelineTableViewCell/TimelineTableViewCell.framework",
+				"${BUILT_PRODUCTS_DIR}/UIFontComplete/UIFontComplete.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AEAccordion.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ExpandableCell.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PagingMenuController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Savory.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftHEXColors.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftIcons.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TimelineTableViewCell.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UIFontComplete.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pwcs/Pods-pwcs-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E721D11F016B232C768AA422 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-pwcs-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CF573C33200C71F400A980CC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF573C3D200C71F400A980CC /* ViewController.swift in Sources */,
+				CF85C49C200CA16F008B02CB /* SpeakersListVC.swift in Sources */,
 				CF573C3B200C71F400A980CC /* AppDelegate.swift in Sources */,
+				CF573C6B200C9D1300A980CC /* EventsVC.swift in Sources */,
+				CF573C57200C750700A980CC /* HelpVC.swift in Sources */,
+				CF001F0120144EBE00EF7EAD /* Event.swift in Sources */,
+				CF573C51200C73C200A980CC /* MainTabBarController.swift in Sources */,
+				CF2E6A2420115319004FA9E9 /* EventCell.swift in Sources */,
+				CF001EF12013E0A300EF7EAD /* Panel.swift in Sources */,
+				CF573C74200C9E1600A980CC /* SpeakerVC.swift in Sources */,
+				CF573C63200C889300A980CC /* FaqVC.swift in Sources */,
+				CF2E6A22201152D3004FA9E9 /* SpeakerCell.swift in Sources */,
+				CF001EEF2013DCDE00EF7EAD /* DataServices.swift in Sources */,
+				CF573C69200C9CE500A980CC /* ScheduleVC.swift in Sources */,
+				CF85C4A0200D0921008B02CB /* PanelCell.swift in Sources */,
+				CF8E1283204F23A300247531 /* AboutVC.swift in Sources */,
+				CF573C55200C74DB00A980CC /* SpeakersVC.swift in Sources */,
+				CF573C53200C74BF00A980CC /* AgendaVC.swift in Sources */,
+				CF573C6F200C9D7600A980CC /* PanelVC.swift in Sources */,
+				CF001EED2013D4CB00EF7EAD /* Speaker.swift in Sources */,
+				CF573C72200C9DE900A980CC /* EventVC.swift in Sources */,
+				CF573C6D200C9D4000A980CC /* PanelsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CF573C3E200C71F400A980CC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CF573C3F200C71F400A980CC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CF573C43200C71F400A980CC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -272,6 +493,7 @@
 		};
 		CF573C4A200C71F400A980CC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24C3D2D22A99D0A9B411D38F /* Pods-pwcs.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -281,12 +503,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhileiz.pwcs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		CF573C4B200C71F400A980CC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 962FD34CD960603B63DAF917 /* Pods-pwcs.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,7 +519,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhileiz.pwcs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
