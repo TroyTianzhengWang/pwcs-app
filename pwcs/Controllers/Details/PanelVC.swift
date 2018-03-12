@@ -32,6 +32,7 @@ class PanelVC: UIViewController {
         view.addSubview(tableView)
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.separatorStyle = .none
         tableView.snp.makeConstraints{(make) -> Void in
             make.top.equalTo(view)
             make.bottom.equalTo(view)
@@ -39,25 +40,54 @@ class PanelVC: UIViewController {
             make.right.equalTo(view)
         }
         tableView.register(PanelTitleCell.self, forCellReuseIdentifier: "title")
+        tableView.register(PanelSpeakerCell.self, forCellReuseIdentifier: "speaker")
+        tableView.register(PanelMapCell.self, forCellReuseIdentifier: "map")
     }
 }
 
 extension PanelVC: UITableViewDelegate, UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 3
+    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        if (section == 0) {
+            return 1
+        } else if (section == 1) {
+            return 6
+        } else if (section == 2) {
+            return 1
+        }
+        return 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCell(withIdentifier: "title") as? PanelTitleCell {
-            cell.setUpView()
-            return cell
+        if (indexPath.section == 0) {
+            if let cell = tableView.dequeueReusableCell(withIdentifier: "title") as? PanelTitleCell {
+                cell.setUpView()
+                return cell
+            }
+        } else if (indexPath.section == 1) {
+            if let cell = tableView.dequeueReusableCell(withIdentifier: "speaker") as? PanelSpeakerCell {
+                cell.setUpView()
+                return cell
+            }
+        } else {
+            if let cell = tableView.dequeueReusableCell(withIdentifier: "map") as? PanelMapCell {
+                cell.setUpView()
+                return cell
+            }
         }
         return UITableViewCell()
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
-    {
-        return 300.0;
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if (indexPath.section == 0) {
+            return 400
+        } else if (indexPath.section == 1) {
+            return 100
+        } else {
+            return 200
+        }
     }
     
 }
