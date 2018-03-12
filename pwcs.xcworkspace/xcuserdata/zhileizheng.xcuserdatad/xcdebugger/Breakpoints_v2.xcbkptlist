@@ -26,7 +26,7 @@
                   moduleName = "SwiftIcons"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/zhileizheng/projects/Ongoing/pwcs/Pods/SwiftIcons/Source/SwiftIcons.swift"
-                  timestampString = "542579572.7627209"
+                  timestampString = "542581458.32576"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "180"
@@ -41,7 +41,7 @@
                   moduleName = "SwiftIcons"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/zhileizheng/projects/Ongoing/pwcs/Pods/SwiftIcons/Source/SwiftIcons.swift"
-                  timestampString = "542579572.765241"
+                  timestampString = "542581458.3286771"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "180"
@@ -56,7 +56,7 @@
                   moduleName = "SwiftIcons"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/zhileizheng/projects/Ongoing/pwcs/Pods/SwiftIcons/Source/SwiftIcons.swift"
-                  timestampString = "542579572.769105"
+                  timestampString = "542581458.331302"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "180"
@@ -71,7 +71,7 @@
                   moduleName = "SwiftIcons"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/zhileizheng/projects/Ongoing/pwcs/Pods/SwiftIcons/Source/SwiftIcons.swift"
-                  timestampString = "542579572.771415"
+                  timestampString = "542581458.333955"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "180"
@@ -86,7 +86,7 @@
                   moduleName = "SwiftIcons"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/zhileizheng/projects/Ongoing/pwcs/Pods/SwiftIcons/Source/SwiftIcons.swift"
-                  timestampString = "542579572.773929"
+                  timestampString = "542581458.336332"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "181"
@@ -94,22 +94,6 @@
                   offsetFromSymbolStart = "214">
                </Location>
             </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "pwcs/Controllers/Pages/PanelsVC.swift"
-            timestampString = "542579572.5199029"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
-            landmarkName = "collectionView(_:cellForItemAt:)"
-            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

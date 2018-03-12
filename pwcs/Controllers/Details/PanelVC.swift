@@ -38,6 +38,7 @@ class PanelVC: UIViewController {
             make.left.equalTo(view)
             make.right.equalTo(view)
         }
+        tableView.register(PanelTitleCell.self, forCellReuseIdentifier: "title")
     }
 }
 
@@ -47,7 +48,16 @@ extension PanelVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "title") as? PanelTitleCell {
+            cell.setUpView()
+            return cell
+        }
         return UITableViewCell()
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
+    {
+        return 300.0;
     }
     
 }
