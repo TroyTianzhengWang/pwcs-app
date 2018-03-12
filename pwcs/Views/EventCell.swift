@@ -17,7 +17,7 @@ class EventCell: UICollectionViewCell {
     
     func setUpView(with event:Event) {
         self.contentView.backgroundColor = .clear
-        self.contentView.layer.cornerRadius = 20.0
+        self.contentView.layer.cornerRadius = 6.0
         self.contentView.layer.borderWidth = 1.0
         self.contentView.layer.borderColor = UIColor.clear.cgColor
         self.contentView.layer.masksToBounds = true
@@ -36,7 +36,7 @@ class EventCell: UICollectionViewCell {
     
     func setUpBackground(_ event:Event) {
         eventBackground.image = event.background
-        eventBackground.layer.cornerRadius = 20
+        eventBackground.layer.cornerRadius = 6
         eventBackground.layer.masksToBounds = true
         eventBackground.clipsToBounds = true
         self.backgroundView = eventBackground

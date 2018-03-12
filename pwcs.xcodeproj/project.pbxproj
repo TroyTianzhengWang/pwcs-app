@@ -12,6 +12,9 @@
 		CF001EEF2013DCDE00EF7EAD /* DataServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF001EEE2013DCDE00EF7EAD /* DataServices.swift */; };
 		CF001EF12013E0A300EF7EAD /* Panel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF001EF02013E0A300EF7EAD /* Panel.swift */; };
 		CF001F0120144EBE00EF7EAD /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF001F0020144EBE00EF7EAD /* Event.swift */; };
+		CF12E9B620571BCE0069C71D /* PanelTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF12E9B520571BCE0069C71D /* PanelTitleCell.swift */; };
+		CF12E9B820571BE20069C71D /* PanelSpeakerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF12E9B720571BE20069C71D /* PanelSpeakerCell.swift */; };
+		CF12E9BA20571C150069C71D /* PanelMapCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF12E9B920571C150069C71D /* PanelMapCell.swift */; };
 		CF2E6A22201152D3004FA9E9 /* SpeakerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2E6A21201152D3004FA9E9 /* SpeakerCell.swift */; };
 		CF2E6A2420115319004FA9E9 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2E6A2320115319004FA9E9 /* EventCell.swift */; };
 		CF573C3B200C71F400A980CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF573C3A200C71F400A980CC /* AppDelegate.swift */; };
@@ -42,6 +45,9 @@
 		CF001EEE2013DCDE00EF7EAD /* DataServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataServices.swift; sourceTree = "<group>"; };
 		CF001EF02013E0A300EF7EAD /* Panel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Panel.swift; sourceTree = "<group>"; };
 		CF001F0020144EBE00EF7EAD /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		CF12E9B520571BCE0069C71D /* PanelTitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelTitleCell.swift; sourceTree = "<group>"; };
+		CF12E9B720571BE20069C71D /* PanelSpeakerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelSpeakerCell.swift; sourceTree = "<group>"; };
+		CF12E9B920571C150069C71D /* PanelMapCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelMapCell.swift; sourceTree = "<group>"; };
 		CF2E6A21201152D3004FA9E9 /* SpeakerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerCell.swift; sourceTree = "<group>"; };
 		CF2E6A2320115319004FA9E9 /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
 		CF573C37200C71F400A980CC /* pwcs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pwcs.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -145,6 +151,9 @@
 				CF85C49F200D0921008B02CB /* PanelCell.swift */,
 				CF2E6A21201152D3004FA9E9 /* SpeakerCell.swift */,
 				CF2E6A2320115319004FA9E9 /* EventCell.swift */,
+				CF12E9B520571BCE0069C71D /* PanelTitleCell.swift */,
+				CF12E9B720571BE20069C71D /* PanelSpeakerCell.swift */,
+				CF12E9B920571C150069C71D /* PanelMapCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -351,6 +360,7 @@
 				CF573C6B200C9D1300A980CC /* EventsVC.swift in Sources */,
 				CF573C57200C750700A980CC /* HelpVC.swift in Sources */,
 				CF001F0120144EBE00EF7EAD /* Event.swift in Sources */,
+				CF12E9B820571BE20069C71D /* PanelSpeakerCell.swift in Sources */,
 				CF573C51200C73C200A980CC /* MainTabBarController.swift in Sources */,
 				CF2E6A2420115319004FA9E9 /* EventCell.swift in Sources */,
 				CF001EF12013E0A300EF7EAD /* Panel.swift in Sources */,
@@ -361,8 +371,10 @@
 				CF573C69200C9CE500A980CC /* ScheduleVC.swift in Sources */,
 				CF85C4A0200D0921008B02CB /* PanelCell.swift in Sources */,
 				CF8E1283204F23A300247531 /* AboutVC.swift in Sources */,
+				CF12E9B620571BCE0069C71D /* PanelTitleCell.swift in Sources */,
 				CF573C55200C74DB00A980CC /* SpeakersVC.swift in Sources */,
 				CF573C53200C74BF00A980CC /* AgendaVC.swift in Sources */,
+				CF12E9BA20571C150069C71D /* PanelMapCell.swift in Sources */,
 				CF573C6F200C9D7600A980CC /* PanelVC.swift in Sources */,
 				CF001EED2013D4CB00EF7EAD /* Speaker.swift in Sources */,
 				CF573C72200C9DE900A980CC /* EventVC.swift in Sources */,

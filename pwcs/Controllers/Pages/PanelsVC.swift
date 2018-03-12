@@ -58,7 +58,7 @@ extension PanelsVC: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let panelVC = PanelVC()
-        present(panelVC, animated: true, completion: nil)
+        navigationController?.pushViewController(panelVC, animated: true)
     }
     
 }
