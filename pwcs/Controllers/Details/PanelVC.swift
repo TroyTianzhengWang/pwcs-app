@@ -15,6 +15,8 @@ class PanelVC: UIViewController {
     
     var tableView = UITableView()
     
+    var panel = Panel(name: "Finance Panel", location: "Annenburg Center", time: "April 14th, 11:00AM - 2:00PM", background: #imageLiteral(resourceName: "panelimg"))
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpBackground()
@@ -25,7 +27,7 @@ class PanelVC: UIViewController {
         view.backgroundColor = .white
         self.navigationController?.navigationBar.topItem?.title = "Panels"
         self.navigationController?.navigationBar.tintColor = .red
-        self.title = "Finance Panel"
+        self.title = panel.name
     }
     
     private func setUpTableView() {
