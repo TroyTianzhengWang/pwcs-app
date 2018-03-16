@@ -36,6 +36,8 @@
 		CF85C4A0200D0921008B02CB /* PanelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85C49F200D0921008B02CB /* PanelCell.swift */; };
 		CF8E1283204F23A300247531 /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8E1282204F23A300247531 /* AboutVC.swift */; };
 		CFDB06F2205C471200938500 /* SpeakerDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDB06F1205C471200938500 /* SpeakerDetailsCell.swift */; };
+		CFDB06F4205C58E600938500 /* EventTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDB06F3205C58E600938500 /* EventTitleCell.swift */; };
+		CFDB06F6205C58F800938500 /* EventMapCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDB06F5205C58F800938500 /* EventMapCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +74,8 @@
 		CF85C49F200D0921008B02CB /* PanelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelCell.swift; sourceTree = "<group>"; };
 		CF8E1282204F23A300247531 /* AboutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
 		CFDB06F1205C471200938500 /* SpeakerDetailsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerDetailsCell.swift; sourceTree = "<group>"; };
+		CFDB06F3205C58E600938500 /* EventTitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTitleCell.swift; sourceTree = "<group>"; };
+		CFDB06F5205C58F800938500 /* EventMapCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMapCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +161,8 @@
 				CF12E9B720571BE20069C71D /* PanelSpeakerCell.swift */,
 				CF12E9B920571C150069C71D /* PanelMapCell.swift */,
 				CFDB06F1205C471200938500 /* SpeakerDetailsCell.swift */,
+				CFDB06F3205C58E600938500 /* EventTitleCell.swift */,
+				CFDB06F5205C58F800938500 /* EventMapCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -367,6 +373,7 @@
 				CF573C51200C73C200A980CC /* MainTabBarController.swift in Sources */,
 				CF2E6A2420115319004FA9E9 /* EventCell.swift in Sources */,
 				CF001EF12013E0A300EF7EAD /* Panel.swift in Sources */,
+				CFDB06F4205C58E600938500 /* EventTitleCell.swift in Sources */,
 				CF573C74200C9E1600A980CC /* SpeakerVC.swift in Sources */,
 				CF573C63200C889300A980CC /* FaqVC.swift in Sources */,
 				CF2E6A22201152D3004FA9E9 /* SpeakerCell.swift in Sources */,
@@ -374,6 +381,7 @@
 				CFDB06F2205C471200938500 /* SpeakerDetailsCell.swift in Sources */,
 				CF573C69200C9CE500A980CC /* ScheduleVC.swift in Sources */,
 				CF85C4A0200D0921008B02CB /* PanelCell.swift in Sources */,
+				CFDB06F6205C58F800938500 /* EventMapCell.swift in Sources */,
 				CF8E1283204F23A300247531 /* AboutVC.swift in Sources */,
 				CF12E9B620571BCE0069C71D /* PanelTitleCell.swift in Sources */,
 				CF573C55200C74DB00A980CC /* SpeakersVC.swift in Sources */,
