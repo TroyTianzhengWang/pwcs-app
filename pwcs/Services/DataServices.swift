@@ -12,7 +12,26 @@ class DataServices {
     
     var shared = DataServices()
     
-    var speakers:[Speaker] = [Speaker]()
+    var speakers:[Speaker]
+    var panels:[Panel]
     
+    init() {
+        speakers = [Speaker]()
+        panels = [Panel]()
+    }
+    
+    func getSpeakers() -> [Speaker] {
+        return speakers
+    }
+    
+    func getPanels() -> [Panel] {
+        return panels
+    }
+    
+    private func readInSpeakers() {
+    }
+    
+    private func readInPanels() {
+    }
     
 }

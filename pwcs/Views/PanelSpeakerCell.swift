@@ -15,6 +15,8 @@ class PanelSpeakerCell: UITableViewCell {
     var speakerName = UILabel()
     var speakerDesc = UILabel()
     
+    var speaker = Speaker(name: "Zhou Xin", desc: "CEO of EHouse China", img: #imageLiteral(resourceName: "manchen"))
+    
     func setUpView() {
         self.addSubview(bgView)
         bgView.addSubview(speakerImage)
@@ -45,7 +47,7 @@ class PanelSpeakerCell: UITableViewCell {
     }
     
     func setUpImage() {
-        speakerImage.image = #imageLiteral(resourceName: "manchen")
+        speakerImage.image = speaker.img
         speakerImage.layer.cornerRadius = 35
         speakerImage.layer.masksToBounds = true
         speakerImage.clipsToBounds = true
@@ -58,7 +60,7 @@ class PanelSpeakerCell: UITableViewCell {
     }
     
     func setUpName() {
-        speakerName.text = "Zhou Xin"
+        speakerName.text = speaker.name
         speakerName.font = UIFont(font: .avenirNextMedium, size: 20)
         speakerName.snp.makeConstraints{(make) -> Void in
             make.left.equalTo(speakerImage.snp.right).offset(20)
@@ -69,7 +71,7 @@ class PanelSpeakerCell: UITableViewCell {
     }
     
     func setUpDesc() {
-        speakerDesc.text = "CEO of EHouse China"
+        speakerDesc.text = speaker.desc
         speakerDesc.font = UIFont(font: .avenirNextRegular, size: 15)
         speakerDesc.snp.makeConstraints{(make) -> Void in
             make.left.equalTo(speakerImage.snp.right).offset(20)

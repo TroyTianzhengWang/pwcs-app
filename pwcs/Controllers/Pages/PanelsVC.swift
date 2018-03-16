@@ -48,7 +48,7 @@ extension PanelsVC: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as? PanelCell {
-            let panel = Panel(name: "Social Responsibility", location: "Annenburg Theatre", time: "10AM - 11:20AM | Saturday", background: #imageLiteral(resourceName: "panel-social"))
+            let panel = Panel(name: "Social Responsibility", location: "Annenburg Theatre", time: "10AM - 11:20AM | Saturday", background: #imageLiteral(resourceName: "panel-social"), desc: "Hello")
             cell.setUpView(with: panel)
             return cell
         } else {
@@ -60,6 +60,7 @@ extension PanelsVC: UICollectionViewDelegate, UICollectionViewDataSource {
         let panelVC = PanelVC()
         navigationController?.pushViewController(panelVC, animated: true)
     }
+    
     
 }
 

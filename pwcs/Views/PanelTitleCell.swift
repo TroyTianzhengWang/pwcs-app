@@ -7,26 +7,32 @@
 //
 
 import UIKit
+import SwiftIcons
 
 class PanelTitleCell: UITableViewCell {
     
     var bgView = UIView()
     var panelImage = UIImageView()
     var panelTitle = UILabel()
+    var panelTime = UILabel()
+    var panelLocation = UILabel()
     var panelDesc = UILabel()
     
-    func setUpView() {
+    func setUpView(panel: Panel) {
         self.addSubview(bgView)
         bgView.addSubview(panelImage)
         bgView.addSubview(panelTitle)
+        bgView.addSubview(panelTime)
+        bgView.addSubview(panelLocation)
         bgView.addSubview(panelDesc)
-        setUpBackground()
-        setUpImage()
-        setUpTitle()
-        setUpDesc()
+        setUpBackground(panel)
+        setUpImage(panel)
+        setUpTitle(panel)
+        setUpTimeLoc(panel)
+        setUpDesc(panel)
     }
     
-    func setUpBackground() {
+    func setUpBackground(_ panel: Panel) {
         bgView.layer.cornerRadius = 6.0
         bgView.layer.borderColor  =  UIColor.clear.cgColor
         bgView.layer.borderWidth = 5.0
@@ -44,8 +50,8 @@ class PanelTitleCell: UITableViewCell {
         bgView.layer.shadowOffset = CGSize(width: -1, height: 2)
     }
     
-    func setUpImage() {
-        panelImage.image = #imageLiteral(resourceName: "panelimg")
+    func setUpImage(_ panel: Panel) {
+        panelImage.image = panel.background
         panelImage.layer.cornerRadius = 6.0
         panelImage.layer.masksToBounds = true
         panelImage.clipsToBounds = true
@@ -57,8 +63,8 @@ class PanelTitleCell: UITableViewCell {
         }
     }
     
-    func setUpTitle() {
-        panelTitle.text = "Finance Panel"
+    func setUpTitle(_ panel: Panel) {
+        panelTitle.text = panel.name
         panelTitle.font = UIFont(font: .avenirNextDemiBold, size: 25)
         panelTitle.snp.makeConstraints{(make) -> Void in
             make.top.equalTo(panelImage.snp.bottom).offset(10)
@@ -68,14 +74,33 @@ class PanelTitleCell: UITableViewCell {
         }
     }
     
-    func setUpDesc() {
-        panelDesc.text = "For the past decade, low real interest rates, declining productivity growth, and lack of attractive domestic investment opportunities have forced global investors to seek higher returns in less familiar territories. "
+    func setUpTimeLoc(_ panel: Panel) {
+        panelTime.setIcon(prefixText: "", prefixTextFont: UIFont(font: .avenirNextRegular, size: 16)!, prefixTextColor: .black, icon: .icofont(.calendar), iconColor: .black, postfixText: "  \(panel.time)", postfixTextFont: UIFont(font: .avenirNextRegular, size: 16)!, postfixTextColor: .black, iconSize: 16)
+        panelLocation.setIcon(prefixText: "", prefixTextFont: UIFont(font: .avenirNextRegular, size: 16)!, prefixTextColor: .black, icon: .icofont(.locationPin), iconColor: .black, postfixText: "  \(panel.location)", postfixTextFont: UIFont(font: .avenirNextRegular, size: 16)!, postfixTextColor: .black, iconSize: 16)
+        panelTime.textAlignment = .left
+        panelLocation.textAlignment = .left
+        panelTime.snp.makeConstraints{(make) -> Void in
+            make.top.equalTo(panelTitle.snp.bottom).offset(12)
+            make.left.equalTo(bgView).offset(10)
+            make.right.equalTo(bgView).offset(-10)
+            make.height.equalTo(18)
+        }
+        panelLocation.snp.makeConstraints{(make) -> Void in
+            make.top.equalTo(panelTime.snp.bottom).offset(5)
+            make.left.equalTo(bgView).offset(10)
+            make.right.equalTo(bgView).offset(-10)
+            make.height.equalTo(18)
+        }
+    }
+    
+    func setUpDesc(_ panel: Panel) {
+        panelDesc.text = panel.desc
         panelDesc.font = UIFont(font: .avenirNextRegular, size: 15)
         panelDesc.lineBreakMode = .byWordWrapping
         panelDesc.textAlignment = .justified
         panelDesc.numberOfLines = 5
         panelDesc.snp.makeConstraints{(make) -> Void in
-            make.top.equalTo(panelTitle.snp.bottom).offset(5)
+            make.top.equalTo(panelLocation.snp.bottom).offset(3)
             make.left.equalTo(bgView).offset(10)
             make.right.equalTo(bgView).offset(-10)
             make.bottom.equalTo(bgView).offset(-10)

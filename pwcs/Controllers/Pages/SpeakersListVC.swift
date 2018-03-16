@@ -15,6 +15,7 @@ class SpeakersListVC: UIViewController {
     var panelsView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        cv.showsVerticalScrollIndicator = false
         cv.backgroundColor = .white
         return cv
     }()

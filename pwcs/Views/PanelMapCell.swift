@@ -42,6 +42,19 @@ class PanelMapCell: UITableViewCell {
         mapView.layer.shadowRadius = 3.0
         mapView.layer.shadowOffset = CGSize(width: -1, height: 2)
         centerMapOnLocation(location: initialLocation)
+        let annotation = MKPointAnnotation()  // <-- new instance here
+        annotation.coordinate = initialLocation.coordinate
+        annotation.title = "Annenburg Center"
+        mapView.addAnnotation(annotation)
+        mapView.isZoomEnabled = false
+        mapView.isUserInteractionEnabled = false
+        mapView.isScrollEnabled = false
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(onMapViewTapped))
+        mapView.addGestureRecognizer(tapGestureRecognizer)
+    }
+    
+    @objc func onMapViewTapped() {
+        PanelVC().addTapped()
     }
 
 }

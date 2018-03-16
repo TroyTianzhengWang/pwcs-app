@@ -14,12 +14,16 @@ struct Panel {
     var location:String
     var time:String
     var background:UIImage
+    var desc:String
+    var speakers:[String]
     
-    init(name:String, location:String, time:String, background:UIImage) {
+    init(name:String, location:String, time:String, background:UIImage, desc:String) {
         self.name = name
         self.location = location
         self.time = time
         self.background = background
+        self.desc = desc
+        self.speakers = []
     }
     
 }
