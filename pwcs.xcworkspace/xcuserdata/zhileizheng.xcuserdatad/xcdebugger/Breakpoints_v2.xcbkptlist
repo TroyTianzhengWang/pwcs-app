@@ -26,7 +26,7 @@
                   moduleName = "SwiftIcons"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/zhileizheng/projects/Ongoing/pwcs/Pods/SwiftIcons/Source/SwiftIcons.swift"
-                  timestampString = "542916484.2216229"
+                  timestampString = "542922256.94684"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "180"
@@ -41,7 +41,7 @@
                   moduleName = "SwiftIcons"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/zhileizheng/projects/Ongoing/pwcs/Pods/SwiftIcons/Source/SwiftIcons.swift"
-                  timestampString = "542916484.22456"
+                  timestampString = "542922256.9495699"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "180"
@@ -56,7 +56,7 @@
                   moduleName = "SwiftIcons"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/zhileizheng/projects/Ongoing/pwcs/Pods/SwiftIcons/Source/SwiftIcons.swift"
-                  timestampString = "542916484.227875"
+                  timestampString = "542922256.9523439"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "180"
@@ -71,7 +71,7 @@
                   moduleName = "SwiftIcons"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/zhileizheng/projects/Ongoing/pwcs/Pods/SwiftIcons/Source/SwiftIcons.swift"
-                  timestampString = "542916484.232291"
+                  timestampString = "542922256.955355"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "180"
@@ -86,7 +86,7 @@
                   moduleName = "SwiftIcons"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/zhileizheng/projects/Ongoing/pwcs/Pods/SwiftIcons/Source/SwiftIcons.swift"
-                  timestampString = "542916484.235633"
+                  timestampString = "542922256.958528"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "181"
@@ -94,6 +94,38 @@
                   offsetFromSymbolStart = "214">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "pwcs/Views/SpeakerDetailsCell.swift"
+            timestampString = "542922256.725794"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "setUpView(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "pwcs/Controllers/Details/SpeakerVC.swift"
+            timestampString = "542922256.726715"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

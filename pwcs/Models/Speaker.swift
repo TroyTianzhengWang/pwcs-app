@@ -11,11 +11,13 @@ import UIKit
 
 struct Speaker {
     var name : String
+    var title : String
     var desc : String
     var img : UIImage
     
-    init(name:String, desc:String, img:UIImage) {
+    init(name:String, title:String, desc:String, img:UIImage) {
         self.name = name
+        self.title = title
         self.desc = desc
         self.img = img
     }

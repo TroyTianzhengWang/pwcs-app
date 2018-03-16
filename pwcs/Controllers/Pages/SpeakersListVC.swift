@@ -48,11 +48,16 @@ extension SpeakersListVC: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as? SpeakerCell {
-            let speaker = Speaker(name: "Chen Man", desc: "CEO of Leijun Photographer", img: #imageLiteral(resourceName: "manchen"))
+            let speaker = Speaker(name: "Chen Man", title: "Famous Photographer", desc: "CEO of Leijun Photographer", img: #imageLiteral(resourceName: "manchen"))
             cell.setUpView(with: speaker)
             return cell
         }
         return SpeakerCell();
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let speakerVC = SpeakerVC()
+        navigationController?.pushViewController(speakerVC, animated: true)
     }
     
 }

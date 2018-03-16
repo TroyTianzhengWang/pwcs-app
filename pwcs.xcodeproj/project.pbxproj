@@ -35,6 +35,7 @@
 		CF85C49C200CA16F008B02CB /* SpeakersListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85C49B200CA16F008B02CB /* SpeakersListVC.swift */; };
 		CF85C4A0200D0921008B02CB /* PanelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85C49F200D0921008B02CB /* PanelCell.swift */; };
 		CF8E1283204F23A300247531 /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8E1282204F23A300247531 /* AboutVC.swift */; };
+		CFDB06F2205C471200938500 /* SpeakerDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDB06F1205C471200938500 /* SpeakerDetailsCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,7 @@
 		CF85C49B200CA16F008B02CB /* SpeakersListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakersListVC.swift; sourceTree = "<group>"; };
 		CF85C49F200D0921008B02CB /* PanelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelCell.swift; sourceTree = "<group>"; };
 		CF8E1282204F23A300247531 /* AboutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
+		CFDB06F1205C471200938500 /* SpeakerDetailsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerDetailsCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 				CF12E9B520571BCE0069C71D /* PanelTitleCell.swift */,
 				CF12E9B720571BE20069C71D /* PanelSpeakerCell.swift */,
 				CF12E9B920571C150069C71D /* PanelMapCell.swift */,
+				CFDB06F1205C471200938500 /* SpeakerDetailsCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -368,6 +371,7 @@
 				CF573C63200C889300A980CC /* FaqVC.swift in Sources */,
 				CF2E6A22201152D3004FA9E9 /* SpeakerCell.swift in Sources */,
 				CF001EEF2013DCDE00EF7EAD /* DataServices.swift in Sources */,
+				CFDB06F2205C471200938500 /* SpeakerDetailsCell.swift in Sources */,
 				CF573C69200C9CE500A980CC /* ScheduleVC.swift in Sources */,
 				CF85C4A0200D0921008B02CB /* PanelCell.swift in Sources */,
 				CF8E1283204F23A300247531 /* AboutVC.swift in Sources */,

@@ -14,14 +14,14 @@ class SpeakerCell: UICollectionViewCell {
     
     var speakerImg = UIImageView();
     var speakerName = UILabel();
-    var speakerDesc = UILabel();
+    var speakerTitle = UILabel();
     
     func setUpView(with speaker:Speaker) {
         self.addSubview(speakerName)
-        self.addSubview(speakerDesc)
+        self.addSubview(speakerTitle)
         setUpImg(speaker)
         setUpName(speaker)
-        setUpDesc(speaker)
+        setUpTitle(speaker)
     }
     
     func setUpImg(_ speaker: Speaker) {
@@ -53,14 +53,14 @@ class SpeakerCell: UICollectionViewCell {
         }
     }
     
-    func setUpDesc(_ speaker: Speaker) {
-        speakerDesc.text = speaker.desc
-        speakerDesc.numberOfLines = 2
-        speakerDesc.lineBreakMode = .byWordWrapping
-        speakerDesc.textAlignment = .center
-        speakerDesc.font = UIFont(font: .avenirLight, size: 14)
-        self.addSubview(speakerDesc)
-        speakerDesc.snp.makeConstraints{ (make) -> Void in
+    func setUpTitle(_ speaker: Speaker) {
+        speakerTitle.text = speaker.desc
+        speakerTitle.numberOfLines = 2
+        speakerTitle.lineBreakMode = .byWordWrapping
+        speakerTitle.textAlignment = .center
+        speakerTitle.font = UIFont(font: .avenirLight, size: 14)
+        self.addSubview(speakerTitle)
+        speakerTitle.snp.makeConstraints{ (make) -> Void in
             make.left.equalTo(self).offset(10)
             make.right.equalTo(self).offset(-10)
             make.centerX.equalTo(self)
