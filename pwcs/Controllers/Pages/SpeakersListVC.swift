@@ -48,7 +48,7 @@ extension SpeakersListVC: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as? SpeakerCell {
-            let speaker = Speaker(name: "Chen Man", title: "Famous Photographer", desc: "CEO of Leijun Photographer", img: #imageLiteral(resourceName: "manchen"))
+            let speaker = Speaker(name: "Chen Man", title: "Famous Photographer", desc: "CEO of Leijun Photographer", img: #imageLiteral(resourceName: "manchen") , panelType: PanelType.closingCeremony)
             cell.setUpView(with: speaker)
             return cell
         }

@@ -11,7 +11,7 @@ import UIFontComplete
 
 class SpeakerDetailsCell: UITableViewCell {
     
-    var speaker = Speaker(name: "Chen Man", title: "Famous Photographer", desc: "She is a photographer", img: #imageLiteral(resourceName: "manchen"))
+    var speaker = Speaker(name: "Chen Man", title: "Famous Photographer", desc: "She is a photographer", img: #imageLiteral(resourceName: "manchen"), panelType: PanelType.closingCeremony)
     
     var bgView = UIView()
     var speakerImage = UIImageView()

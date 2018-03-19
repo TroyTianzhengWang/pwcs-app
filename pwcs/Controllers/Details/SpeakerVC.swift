@@ -10,7 +10,7 @@ import UIKit
 
 class SpeakerVC: UIViewController {
     
-    var speaker = Speaker(name: "Chen Man", title: "Famous Photographer", desc: "My interest is in building scalable software products and services with optimized user experience. Fluent in Java, JavaScript, Ruby, Swift and Python, I have accumulated experiences and a number of production-level projects in Web Development, iOS and Android Development.", img: #imageLiteral(resourceName: "manchen"))
+    var speaker = Speaker(name: "Chen Man", title: "Famous Photographer", desc: "My interest is in building scalable software products and services with optimized user experience. Fluent in Java, JavaScript, Ruby, Swift and Python, I have accumulated experiences and a number of production-level projects in Web Development, iOS and Android Development.", img: #imageLiteral(resourceName: "manchen"), panelType: PanelType.finance)
     
     var tableView = UITableView()
 

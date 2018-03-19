@@ -14,12 +14,29 @@ struct Speaker {
     var title : String
     var desc : String
     var img : UIImage
+    var panelType : PanelType
     
-    init(name:String, title:String, desc:String, img:UIImage) {
+    init(name:String, title:String, desc:String, img:UIImage, panelType:PanelType) {
         self.name = name
         self.title = title
         self.desc = desc
         self.img = img
+        self.panelType = panelType
     }
     
+}
+
+enum PanelType {
+    case finance
+    case technology
+    case fashion
+    case realEstate
+    case internationalRelations
+    case socialResponsibility
+    
+    case openingCeremony
+    case closingCeremony
+    
+    case individual
+    case special
 }

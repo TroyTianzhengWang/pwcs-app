@@ -15,7 +15,7 @@ class PanelSpeakerCell: UITableViewCell {
     var speakerName = UILabel()
     var speakerDesc = UILabel()
     
-    var speaker = Speaker(name: "Chen Man", title: "Famous Photoagrapher", desc: "CEO of EHouse China", img: #imageLiteral(resourceName: "manchen"))
+    var speaker = Speaker(name: "Chen Man", title: "Famous Photoagrapher", desc: "CEO of EHouse China", img: #imageLiteral(resourceName: "manchen"), panelType: PanelType.special)
     
     func setUpView() {
         self.addSubview(bgView)
