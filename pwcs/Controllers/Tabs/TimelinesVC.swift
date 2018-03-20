@@ -1,24 +1,24 @@
 //
-//  HelpVC.swift
+//  TimelinesVC.swift
 //  pwcs
 //
-//  Created by Zhilei Zheng on 2018/1/15.
-//  Copyright © 2018年 Zhilei Zheng. All rights reserved.
+//  Created by Zhilei Zheng on 3/19/18.
+//  Copyright © 2018 Zhilei Zheng. All rights reserved.
 //
 
 import UIKit
 import PagingMenuController
-
 private struct PagingMenuOptions: PagingMenuControllerCustomizable {
-    private let viewController1 = FaqVC()
-    private let viewController2 = AboutVC()
+    private let viewController1 = ScheduleVC()
+    private let viewController2 = ScheduleVC()
+    private let viewController3 = ScheduleVC()
     
     fileprivate var componentType: ComponentType {
         return .all(menuOptions: MenuOptions(), pagingControllers: pagingControllers)
     }
     
     fileprivate var pagingControllers: [UIViewController] {
-        return [viewController1, viewController2]
+        return [viewController1, viewController2, viewController3]
     }
     
     fileprivate struct MenuOptions: MenuViewCustomizable {
@@ -26,7 +26,7 @@ private struct PagingMenuOptions: PagingMenuControllerCustomizable {
             return .segmentedControl
         }
         var itemsOptions: [MenuItemViewCustomizable] {
-            return [MenuItem1(), MenuItem2()]
+            return [MenuItem1(), MenuItem2(), MenuItem3()]
         }
         var backgroundColor: UIColor {
             return UIColor.white
@@ -38,23 +38,31 @@ private struct PagingMenuOptions: PagingMenuControllerCustomizable {
     
     fileprivate struct MenuItem1: MenuItemViewCustomizable {
         var displayMode: MenuItemDisplayMode {
-            return .text(title: MenuItemText(text: "FAQ"))
+            return .text(title: MenuItemText(text: "13 Friday"))
         }
     }
-    
     fileprivate struct MenuItem2: MenuItemViewCustomizable {
         var displayMode: MenuItemDisplayMode {
-            return .text(title: MenuItemText(text: "About"))
+            return .text(title: MenuItemText(text: "14 Saturday"))
+        }
+    }
+    fileprivate struct MenuItem3: MenuItemViewCustomizable {
+        var displayMode: MenuItemDisplayMode {
+            return .text(title: MenuItemText(text: "15 Sunday"))
         }
     }
 }
 
-class HelpVC: UIViewController {
+
+class TimelinesVC: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .white
         // Do any additional setup after loading the view, typically from a nib.
         view.backgroundColor = UIColor.white
-        
+        navigationController?.navigationBar.barTintColor = UIColor.white
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.red]
         let options = PagingMenuOptions()
         let pagingMenuController = PagingMenuController(options: options)
         pagingMenuController.view.frame.origin.y += 64
@@ -85,11 +93,11 @@ class HelpVC: UIViewController {
         pagingMenuController.didMove(toParentViewController: self)
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        self.navigationController?.navigationBar.topItem?.title = "Help"
+    override func viewDidAppear(_ animated: Bool) {
+        navigationController?.navigationBar.topItem?.title = "Schedule"
         navigationController?.navigationBar.titleTextAttributes = [
             NSAttributedStringKey.foregroundColor : UIColor.black
         ]
     }
-}
 
+}

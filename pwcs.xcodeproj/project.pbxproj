@@ -35,6 +35,7 @@
 		CF85C49C200CA16F008B02CB /* SpeakersListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85C49B200CA16F008B02CB /* SpeakersListVC.swift */; };
 		CF85C4A0200D0921008B02CB /* PanelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85C49F200D0921008B02CB /* PanelCell.swift */; };
 		CF8E1283204F23A300247531 /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8E1282204F23A300247531 /* AboutVC.swift */; };
+		CFB63E8E2060A4E200777368 /* TimelinesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB63E8D2060A4E200777368 /* TimelinesVC.swift */; };
 		CFDB06F2205C471200938500 /* SpeakerDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDB06F1205C471200938500 /* SpeakerDetailsCell.swift */; };
 		CFDB06F4205C58E600938500 /* EventTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDB06F3205C58E600938500 /* EventTitleCell.swift */; };
 		CFDB06F6205C58F800938500 /* EventMapCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDB06F5205C58F800938500 /* EventMapCell.swift */; };
@@ -73,6 +74,7 @@
 		CF85C49B200CA16F008B02CB /* SpeakersListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakersListVC.swift; sourceTree = "<group>"; };
 		CF85C49F200D0921008B02CB /* PanelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelCell.swift; sourceTree = "<group>"; };
 		CF8E1282204F23A300247531 /* AboutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
+		CFB63E8D2060A4E200777368 /* TimelinesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelinesVC.swift; sourceTree = "<group>"; };
 		CFDB06F1205C471200938500 /* SpeakerDetailsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerDetailsCell.swift; sourceTree = "<group>"; };
 		CFDB06F3205C58E600938500 /* EventTitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTitleCell.swift; sourceTree = "<group>"; };
 		CFDB06F5205C58F800938500 /* EventMapCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMapCell.swift; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 				CF573C52200C74BF00A980CC /* AgendaVC.swift */,
 				CF573C54200C74DB00A980CC /* SpeakersVC.swift */,
 				CF573C56200C750700A980CC /* HelpVC.swift */,
+				CFB63E8D2060A4E200777368 /* TimelinesVC.swift */,
 			);
 			path = Tabs;
 			sourceTree = "<group>";
@@ -371,6 +374,7 @@
 				CF001F0120144EBE00EF7EAD /* Event.swift in Sources */,
 				CF12E9B820571BE20069C71D /* PanelSpeakerCell.swift in Sources */,
 				CF573C51200C73C200A980CC /* MainTabBarController.swift in Sources */,
+				CFB63E8E2060A4E200777368 /* TimelinesVC.swift in Sources */,
 				CF2E6A2420115319004FA9E9 /* EventCell.swift in Sources */,
 				CF001EF12013E0A300EF7EAD /* Panel.swift in Sources */,
 				CFDB06F4205C58E600938500 /* EventTitleCell.swift in Sources */,

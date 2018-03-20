@@ -11,15 +11,14 @@ import PagingMenuController
 
 private struct PagingMenuOptions: PagingMenuControllerCustomizable {
     private let viewController1 = PanelsVC()
-    private let viewController2 = ScheduleVC()
-    private let viewController3 = EventsVC()
+    private let viewController2 = EventsVC()
     
     fileprivate var componentType: ComponentType {
         return .all(menuOptions: MenuOptions(), pagingControllers: pagingControllers)
     }
     
     fileprivate var pagingControllers: [UIViewController] {
-        return [viewController1, viewController2, viewController3]
+        return [viewController1, viewController2]
     }
     
     fileprivate struct MenuOptions: MenuViewCustomizable {
@@ -27,7 +26,7 @@ private struct PagingMenuOptions: PagingMenuControllerCustomizable {
             return .segmentedControl
         }
         var itemsOptions: [MenuItemViewCustomizable] {
-            return [MenuItem1(), MenuItem2(), MenuItem3()]
+            return [MenuItem1(), MenuItem2()]
         }
         var backgroundColor: UIColor {
             return UIColor.white
@@ -44,11 +43,6 @@ private struct PagingMenuOptions: PagingMenuControllerCustomizable {
     }
     fileprivate struct MenuItem2: MenuItemViewCustomizable {
         var displayMode: MenuItemDisplayMode {
-            return .text(title: MenuItemText(text: "Schedule"))
-        }
-    }
-    fileprivate struct MenuItem3: MenuItemViewCustomizable {
-        var displayMode: MenuItemDisplayMode {
             return .text(title: MenuItemText(text: "Events"))
         }
     }
@@ -59,7 +53,7 @@ class AgendaVC: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         view.backgroundColor = UIColor.white
-        navigationController?.navigationBar.barTintColor = UIColor.black
+        navigationController?.navigationBar.barTintColor = UIColor.white
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.red]
         let options = PagingMenuOptions()
         let pagingMenuController = PagingMenuController(options: options)
@@ -93,6 +87,9 @@ class AgendaVC: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         navigationController?.navigationBar.topItem?.title = "Agenda"
+        navigationController?.navigationBar.titleTextAttributes = [
+            NSAttributedStringKey.foregroundColor : UIColor.black
+        ]
     }
 }
 
