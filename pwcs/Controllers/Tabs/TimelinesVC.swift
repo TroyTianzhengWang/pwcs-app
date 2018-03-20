@@ -18,6 +18,9 @@ private struct PagingMenuOptions: PagingMenuControllerCustomizable {
     }
     
     fileprivate var pagingControllers: [UIViewController] {
+        viewController1.setUpDay(day: 0)
+        viewController2.setUpDay(day: 1)
+        viewController3.setUpDay(day: 2)
         return [viewController1, viewController2, viewController3]
     }
     
