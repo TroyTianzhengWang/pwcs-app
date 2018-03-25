@@ -11,21 +11,26 @@ import MapKit
 
 class EventVC: UIViewController {
     
-    var event = Event(name: "InnoTalk创业大会", location: "Inn At Penn", time: "April 15th, 11:00AM - 2:00PM", desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ", background: #imageLiteral(resourceName: "event-bg"))
+    var event : Event?
     
     var tableView = UITableView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    func setEvent(_ event: Event) {
+        self.event = event
         setUpDefaults()
         setUpTableView()
     }
+    
     
     func setUpDefaults() {
         view.backgroundColor = UIColor.white
         self.navigationController?.navigationBar.topItem?.title = "Events"
         self.navigationController?.navigationBar.tintColor = .red
-        self.title = event.name
+        self.title = event!.name
         let rightButton = UIBarButtonItem()
         rightButton.setIcon(icon: .ionicons(.map), iconSize: 25, color: .red, cgRect: CGRect(x: 10, y: 5, width: 25, height: 25), target: self, action: #selector(addTapped))
         navigationItem.rightBarButtonItem = rightButton
@@ -42,7 +47,7 @@ class EventVC: UIViewController {
         ]
         let placemark = MKPlacemark(coordinate: coordinates, addressDictionary: nil)
         let mapItem = MKMapItem(placemark: placemark)
-        mapItem.name = "Annenburg Center"
+        mapItem.name = event!.name
         mapItem.openInMaps(launchOptions: options)
     }
     
@@ -76,12 +81,12 @@ extension EventVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if (indexPath.section == 0) {
             if let cell = tableView.dequeueReusableCell(withIdentifier: "eventTitle") as? EventTitleCell {
-                cell.setUpView(event: event)
+                cell.setUpView(with: event!)
                 return cell
             }
         } else if (indexPath.section == 1) {
             if let cell = tableView.dequeueReusableCell(withIdentifier: "eventMap") as? EventMapCell {
-                cell.setUpView()
+                cell.setUpView(with: event!)
                 return cell
             }
         }

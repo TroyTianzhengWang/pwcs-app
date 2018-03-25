@@ -71,7 +71,7 @@ class EventCell: UICollectionViewCell {
     }
     
     func setUpLocation(_ event: Event) {
-        eventLocation.text = event.location
+        eventLocation.text = event.location.translateLocation()
         eventLocation.textAlignment = .left
         eventLocation.font = UIFont(font: .avenirNextRegular, size: 15)
         eventLocation.textColor = .white

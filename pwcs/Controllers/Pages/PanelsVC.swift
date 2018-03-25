@@ -12,6 +12,7 @@ import SnapKit
 class PanelsVC: UIViewController {
     
     let cellId = "cellId"
+    var panels = [Panel]()
     
     var panelsView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
@@ -27,6 +28,7 @@ class PanelsVC: UIViewController {
     
     func setupController() {
         view.addSubview(panelsView)
+        panels = DataServices.shared.getPanels()
         panelsView.snp.makeConstraints {(make) -> Void in
             make.left.equalTo(self.view).offset(0)
             make.right.equalTo(self.view).offset(0)
@@ -36,6 +38,7 @@ class PanelsVC: UIViewController {
         panelsView.delegate = self
         panelsView.dataSource = self
         panelsView.register(PanelCell.self, forCellWithReuseIdentifier: cellId)
+        panelsView.reloadData()
     }
     
 }
@@ -43,13 +46,13 @@ class PanelsVC: UIViewController {
 extension PanelsVC: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return panels.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as? PanelCell {
-            let panel = Panel(name: "Social Responsibility", location: "Annenburg Theatre", time: "10AM - 11:20AM | Saturday", background: #imageLiteral(resourceName: "panel-social"), desc: "Hello")
-            cell.setUpView(with: panel)
+//            let panel = Panel(name: "Social Responsibility", location: .annenburgCenter, time: "10AM - 11:20AM | Saturday", background: #imageLiteral(resourceName: "panel-social"), desc: "Hello")
+            cell.setUpView(with: panels[indexPath.row])
             return cell
         } else {
             return collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath)

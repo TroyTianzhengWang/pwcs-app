@@ -69,7 +69,7 @@ class PanelCell: UICollectionViewCell {
     }
     
     func setUpLocation(_ panel: Panel) {
-        panelLocation.text = panel.location
+        panelLocation.text = panel.location.translateLocation()
         panelLocation.textAlignment = .left
         panelLocation.font = UIFont(font: .avenirNextRegular, size: 15)
         self.addSubview(panelLocation)

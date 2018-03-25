@@ -12,21 +12,30 @@ import MapKit
 class EventMapCell: UITableViewCell {
     
     var mapView = MKMapView()
+    
+    var event: Event?
 
     override func awakeFromNib() {
         super.awakeFromNib()
     }
     
-    let initialLocation = CLLocation(latitude: 39.952385, longitude: -75.190356)
     let regionRadius: CLLocationDistance = 1000
+    
     func centerMapOnLocation(location: CLLocation) {
         let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,
                                                                   regionRadius, regionRadius)
         mapView.setRegion(coordinateRegion, animated: true)
     }
     
-    func setUpView() {
+    func setUpView(with event: Event) {
         self.addSubview(mapView)
+        self.event = event
+        setUpMapLayout()
+        setUpMapAnnotation()
+        setUpMapResponse()
+    }
+    
+    func setUpMapLayout() {
         mapView.layer.cornerRadius = 6.0
         mapView.layer.borderColor  =  UIColor.clear.cgColor
         mapView.layer.borderWidth = 5.0
@@ -41,11 +50,17 @@ class EventMapCell: UITableViewCell {
         mapView.layer.shadowOpacity = 1
         mapView.layer.shadowRadius = 3.0
         mapView.layer.shadowOffset = CGSize(width: -1, height: 2)
-        centerMapOnLocation(location: initialLocation)
+    }
+    
+    func setUpMapAnnotation() {
+        centerMapOnLocation(location: event!.location.translateCoordinates())
         let annotation = MKPointAnnotation()  // <-- new instance here
-        annotation.coordinate = initialLocation.coordinate
-        annotation.title = "Annenburg Center"
+        annotation.coordinate = event!.location.translateCoordinates().coordinate
+        annotation.title = event!.location.translateLocation()
         mapView.addAnnotation(annotation)
+    }
+    
+    func setUpMapResponse() {
         mapView.isZoomEnabled = false
         mapView.isUserInteractionEnabled = false
         mapView.isScrollEnabled = false

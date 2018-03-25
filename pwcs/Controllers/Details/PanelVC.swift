@@ -15,7 +15,7 @@ class PanelVC: UIViewController {
     
     var tableView = UITableView()
     
-    var panel = Panel(name: "Finance Panel", location: "Annenburg Center", time: "April 14th, 11:00AM - 2:00PM", background:#imageLiteral(resourceName: "panelimg"), desc: "For the past decade, low real interest rates, declining productivity growth, and lack of attractive domestic investment opportunities have forced global investors to seek higher returns in less familiar territories. ")
+    var panel = Panel(name: "Finance Panel", location: LocationType.annenburgCenter, time: "April 14th, 11:00AM - 2:00PM", background:#imageLiteral(resourceName: "panelimg"), desc: "For the past decade, low real interest rates, declining productivity growth, and lack of attractive domestic investment opportunities have forced global investors to seek higher returns in less familiar territories. ")
     
     override func viewDidLoad() {
         super.viewDidLoad()

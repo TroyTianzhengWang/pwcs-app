@@ -21,7 +21,7 @@ class EventTitleCell: UITableViewCell {
         super.awakeFromNib()
     }
     
-    func setUpView(event: Event) {
+    func setUpView(with event: Event) {
         self.addSubview(bgView)
         bgView.addSubview(eventImage)
         bgView.addSubview(eventTitle)

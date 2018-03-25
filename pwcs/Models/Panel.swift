@@ -11,13 +11,13 @@ import UIKit
 
 struct Panel {
     var name:String
-    var location:String
+    var location:LocationType
     var time:String
     var background:UIImage
     var desc:String
     var speakers:[String]
     
-    init(name:String, location:String, time:String, background:UIImage, desc:String) {
+    init(name:String, location:LocationType, time:String, background:UIImage, desc:String) {
         self.name = name
         self.location = location
         self.time = time
