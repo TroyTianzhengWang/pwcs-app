@@ -54,7 +54,7 @@ class SpeakerCell: UICollectionViewCell {
     }
     
     func setUpTitle(_ speaker: Speaker) {
-        speakerTitle.text = speaker.desc
+        speakerTitle.text = speaker.title
         speakerTitle.numberOfLines = 2
         speakerTitle.lineBreakMode = .byWordWrapping
         speakerTitle.textAlignment = .center

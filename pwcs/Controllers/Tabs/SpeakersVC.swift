@@ -24,6 +24,14 @@ private struct PagingMenuOptions: PagingMenuControllerCustomizable {
     }
     
     fileprivate var pagingControllers: [UIViewController] {
+        viewController1.setPanelType(with: .openingCeremony)
+        viewController2.setPanelType(with: .finance)
+        viewController3.setPanelType(with: .internationalRelations)
+        viewController4.setPanelType(with: .realEstate)
+        viewController5.setPanelType(with: .technology)
+        viewController6.setPanelType(with: .fashion)
+        viewController7.setPanelType(with: .socialResponsibility)
+        viewController8.setPanelType(with: .closingCeremony)
         return [viewController1, viewController2, viewController3, viewController4, viewController5, viewController6, viewController7, viewController8]
     }
     
@@ -69,7 +77,7 @@ private struct PagingMenuOptions: PagingMenuControllerCustomizable {
     }
     fileprivate struct MenuItem6: MenuItemViewCustomizable {
         var displayMode: MenuItemDisplayMode {
-            return .text(title: MenuItemText(text: "Entertainment"))
+            return .text(title: MenuItemText(text: "Fashion"))
         }
     }
     fileprivate struct MenuItem7: MenuItemViewCustomizable {

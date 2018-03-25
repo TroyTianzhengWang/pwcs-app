@@ -16,7 +16,7 @@ class DataServices {
     private var panels = [PanelType : Panel]()
     private var panelSpeakers = [PanelType : [Speaker]]()
     private var rawPanels = [Panel]()
-    private var rawSpeakers = [Panel]()
+    private var rawSpeakers = [Speaker]()
     private var rawEvents = [Event]()
     private var schedules = [Int: [(TimelinePoint, UIColor, String, String, String?, String?, String?)]]()
     
@@ -62,11 +62,25 @@ class DataServices {
     }
     
     private func readInSpeakers() {
-        
+        readInRawSpeakers()
+        for speaker in rawSpeakers {
+            if panelSpeakers[speaker.panelType] == nil {
+                panelSpeakers[speaker.panelType] = [Speaker]()
+            }
+            panelSpeakers[speaker.panelType]?.append(speaker)
+        }
     }
     
     private func readInRawSpeakers() {
-        
+        rawSpeakers.append(Speaker(name: "Kevin Rudd", title: "Former Australia Premier", desc: "For the past decade, low real interest rates, declining productivity growth, and lack of attractive domestic investment opportunities have forced global investors to seek higher returns in less familiar territories. ", img: #imageLiteral(resourceName: "speaker-kevin-rudd"), panelType: .internationalRelations))
+        rawSpeakers.append(Speaker(name: "Kebin Dai", title: "CEO of Lieping", desc: "For the past decade, low real interest rates, declining productivity growth, and lack of attractive domestic investment opportunities have forced global investors to seek higher returns in less familiar territories. ", img: #imageLiteral(resourceName: "speaker-kebin-dai"), panelType: .technology))
+        rawSpeakers.append(Speaker(name: "Su Mang", title: "Former Australia Premier", desc: "For the past decade, low real interest rates, declining productivity growth, and lack of attractive domestic investment opportunities have forced global investors to seek higher returns in less familiar territories. ", img: #imageLiteral(resourceName: "speaker-su-mang"), panelType: .fashion))
+        rawSpeakers.append(Speaker(name: "Fu Ying", title: "Chinese Foreign Minster", desc: "For the past decade, low real interest rates, declining productivity growth, and lack of attractive domestic investment opportunities have forced global investors to seek higher returns in less familiar territories. ", img: #imageLiteral(resourceName: "speaker-fu-ying"), panelType: .internationalRelations))
+        rawSpeakers.append(Speaker(name: "Xudong Zhu", title: "Former Australia Premier", desc: "For the past decade, low real interest rates, declining productivity growth, and lack of attractive domestic investment opportunities have forced global investors to seek higher returns in less familiar territories. ", img: #imageLiteral(resourceName: "speaker-xudong-zhu"), panelType: .realEstate))
+        rawSpeakers.append(Speaker(name: "Chen Man", title: "Former Australia Premier", desc: "For the past decade, low real interest rates, declining productivity growth, and lack of attractive domestic investment opportunities have forced global investors to seek higher returns in less familiar territories. ", img: #imageLiteral(resourceName: "manchen"), panelType: .openingCeremony))
+        rawSpeakers.append(Speaker(name: "Kevin Rudd", title: "Former Australia Premier", desc: "For the past decade, low real interest rates, declining productivity growth, and lack of attractive domestic investment opportunities have forced global investors to seek higher returns in less familiar territories. ", img: #imageLiteral(resourceName: "speaker-ying-shu-lin"), panelType: .closingCeremony))
+        rawSpeakers.append(Speaker(name: "Kevin Rudd", title: "Former Australia Premier", desc: "For the past decade, low real interest rates, declining productivity growth, and lack of attractive domestic investment opportunities have forced global investors to seek higher returns in less familiar territories. ", img: #imageLiteral(resourceName: "speaker-wang-xi"), panelType: .socialResponsibility))
+        rawSpeakers.append(Speaker(name: "Kevin Rudd", title: "Former Australia Premier", desc: "For the past decade, low real interest rates, declining productivity growth, and lack of attractive domestic investment opportunities have forced global investors to seek higher returns in less familiar territories. ", img: #imageLiteral(resourceName: "speaker-su-mang"), panelType: .finance))
     }
     
     private func readInPanels() {

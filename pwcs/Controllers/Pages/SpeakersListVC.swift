@@ -11,6 +11,7 @@ import UIKit
 class SpeakersListVC: UIViewController {
     
     let cellId = "cellId"
+    var speakers = [Speaker]()
     
     var panelsView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
@@ -22,6 +23,10 @@ class SpeakersListVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    func setPanelType(with panelType : PanelType) {
+        self.speakers = DataServices.shared.getSpeakers(for: panelType)
         setupController()
     }
     
@@ -43,13 +48,12 @@ class SpeakersListVC: UIViewController {
 extension SpeakersListVC: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 6
+        return speakers.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as? SpeakerCell {
-            let speaker = Speaker(name: "Chen Man", title: "Famous Photographer", desc: "CEO of Leijun Photographer", img: #imageLiteral(resourceName: "manchen") , panelType: PanelType.closingCeremony)
-            cell.setUpView(with: speaker)
+            cell.setUpView(with: speakers[indexPath.row])
             return cell
         }
         return SpeakerCell();
@@ -57,6 +61,7 @@ extension SpeakersListVC: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let speakerVC = SpeakerVC()
+        speakerVC.setUpSpeaker(with: speakers[indexPath.row])
         navigationController?.pushViewController(speakerVC, animated: true)
     }
     

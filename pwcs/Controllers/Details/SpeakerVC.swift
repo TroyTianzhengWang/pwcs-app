@@ -10,12 +10,16 @@ import UIKit
 
 class SpeakerVC: UIViewController {
     
-    var speaker = Speaker(name: "Chen Man", title: "Famous Photographer", desc: "My interest is in building scalable software products and services with optimized user experience. Fluent in Java, JavaScript, Ruby, Swift and Python, I have accumulated experiences and a number of production-level projects in Web Development, iOS and Android Development.", img: #imageLiteral(resourceName: "manchen"), panelType: PanelType.finance)
+    var speaker : Speaker?
     
     var tableView = UITableView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    func setUpSpeaker(with speaker : Speaker) {
+        self.speaker = speaker
         setUpDefaults()
         setUpTableView()
     }
@@ -24,7 +28,7 @@ class SpeakerVC: UIViewController {
         view.backgroundColor = UIColor.white
         self.navigationController?.navigationBar.topItem?.title = "Speakers"
         self.navigationController?.navigationBar.tintColor = .red
-        self.title = "Chen Man"
+        self.title = speaker!.name
     }
     
     func setUpTableView() {
@@ -57,13 +61,13 @@ extension SpeakerVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "speaker") as? SpeakerDetailsCell {
-            cell.setUpView(speaker)
+            cell.setUpView(speaker!)
             return cell
         }
         return UITableViewCell()
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return CGFloat(200 + speaker.desc.count / 40 * 35)
+        return CGFloat(200 + speaker!.desc.count / 40 * 35)
     }
 }
