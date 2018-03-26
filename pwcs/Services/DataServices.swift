@@ -106,11 +106,11 @@ class DataServices {
     
     private func readInSchedule() {
         schedules = [0:[
-            (TimelinePoint(), UIColor.black, "2:00PM - 6:00PM: Audience Registration", "Audience register arrival with staff. Summit brochure, and badge will be distributed.\nLocation: Hilton Inn At Penn", "4 hrs", nil, "Sun"),
-            (TimelinePoint(), UIColor.black, "4:00PM - 6:00PM: Press Release", "Presentation by representatives from the Summit Board and the Wharton school to media.\nLocation: Sheraton in University City", "2 hrs", nil, "Sun"),
-            (TimelinePoint(), UIColor.black, "6:00PM - 8:00PM: Career Fair and\nPanel Presentation", "\nPresentation by representatives from the Summit Board, Liepin and HR from participating companies.\nLocation: Hilton Inn At Penn", "2 hrs", nil, "Sun"),
-            (TimelinePoint(), UIColor.black, "6:00PM- 7:00PM: Cocktail Social", "Cocktail social co-hosted by Summit Board and the Wharton School.\nLocation:Huntsman Hall 8th Floor", "1 hr", "Apple", "Sun"),
-            (TimelinePoint(), UIColor.clear, "7:00PM - 9:00PM: VIP Dinner", "Black-tie dinner co-hosted by Summit Board and the Wharton School.\nLocation:Huntsman Hall 8th Floor", "2 hrs", nil, "Moon")
+            (TimelinePoint(), UIColor.black, "Audience Registration", "2:00 PM - 6:00 PM\nHilton Inn At Penn\nAudience register arrival with staff. Summit brochure, and badge will be distributed.", "4 Hours", nil, "Sun"),
+            (TimelinePoint(), UIColor.black, "Press Release", "4:00 PM - 6:00 PM\nSheraton in University City\nPresentation by representatives from the Summit Board and the Wharton school to media.", "2 Hours", nil, "Sun"),
+            (TimelinePoint(), UIColor.black, "Career Fair and Panel Presentation", "6:00 PM - 8:00 PM\nHilton Inn At Penn\nPresentation by representatives from the Summit Board, Liepin and HR from participating companies.", "2 hrs", nil, "Sun"),
+            (TimelinePoint(), UIColor.black, "Cocktail Social", "6:00 PM - 7:00 PM\nHuntsman Hall 8th Floor\nCocktail social co-hosted by Summit Board and the Wharton School.", "1 Hour", "Apple", "Sun"),
+            (TimelinePoint(), UIColor.clear, "VIP Dinner", "7:00 PM - 9:00 PM\nHuntsman Hall 8th Floor\nBlack-tie dinner co-hosted by Summit Board and the Wharton School.", "2 Hours", nil, "Moon")
             ], 1:[
                 (TimelinePoint(), UIColor.black, "2:30: Day 2", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", nil, nil, "Sun"),
                 (TimelinePoint(), UIColor.black, "15:30", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", nil, nil, "Sun"),
