@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '1CD170BBB32920317525DF871423D771'
-               BlueprintName = 'TimelineTableViewCell'
-               ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'TimelineTableViewCell.framework'>
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "1CD170BBB32920317525DF871423D771"
+               BlueprintName = "TimelineTableViewCell"
+               ReferencedContainer = "container:Pods.xcodeproj"
+               BuildableName = "TimelineTableViewCell.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
