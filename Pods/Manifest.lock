@@ -1,5 +1,5 @@
 PODS:
-  - AEAccordion (2.0.1)
+  - AEAccordion (2.1.0)
   - ExpandableCell (1.2.2)
   - PagingMenuController (2.2.0)
   - Savory (0.1.1)
@@ -30,7 +30,7 @@ CHECKOUT OPTIONS:
     :git: https://github.com/Nandiin/Savory.git
 
 SPEC CHECKSUMS:
-  AEAccordion: 85bd1ec5c0d26f09dfd2c74600f849f95fed63cd
+  AEAccordion: 5ad8bdc99478f76379857e5351547252a7cfbf12
   ExpandableCell: f2d99f9ae03a8c393e268adddaeb7f6d2525a76e
   PagingMenuController: 6176618987bb170096664f2da097313e45ed9c31
   Savory: 5523392d8a76d995812809ae31499d69aaa03305

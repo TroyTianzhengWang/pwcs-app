@@ -107,19 +107,24 @@ class DataServices {
         schedules = [0:[
             (TimelinePoint(), UIColor.black, "Audience Registration", "2:00 PM - 6:00 PM\nHilton Inn At Penn\nAudience register arrival with staff. Summit brochure, and badge will be distributed.", "4 Hours", nil, "Sun"),
             (TimelinePoint(), UIColor.black, "Press Release", "4:00 PM - 6:00 PM\nSheraton in University City\nPresentation by representatives from the Summit Board and the Wharton school to media.", "2 Hours", nil, "Sun"),
-            (TimelinePoint(), UIColor.black, "Career Fair and Panel Presentation", "6:00 PM - 8:00 PM\nHilton Inn At Penn\nPresentation by representatives from the Summit Board, Liepin and HR from participating companies.", "2 hrs", nil, "Sun"),
-            (TimelinePoint(), UIColor.black, "Cocktail Social", "6:00 PM - 7:00 PM\nHuntsman Hall 8th Floor\nCocktail social co-hosted by Summit Board and the Wharton School.", "1 Hour", "Apple", "Sun"),
-            (TimelinePoint(), UIColor.clear, "VIP Dinner", "7:00 PM - 9:00 PM\nHuntsman Hall 8th Floor\nBlack-tie dinner co-hosted by Summit Board and the Wharton School.", "2 Hours", nil, "Moon")
+            (TimelinePoint(), UIColor.black, "Career Fair and Panel Presentation", "6:00 PM - 8:00 PM\nHilton Inn At Penn\nPresentation by representatives from the Summit Board, Liepin and HR from participating companies.", "2 Hours", nil, "Sun"),
+            (TimelinePoint(), UIColor.black, "Cocktail Social", "6:00 PM - 7:00 PM\nHuntsman Hall 8th Floor\nCocktail social co-hosted by Summit Board and the Wharton School.", "1 Hour", nil, "Sun"),
+            (TimelinePoint(), UIColor.clear, "VIP Dinner", "7:00 PM - 9:00 PM\nHuntsman Hall 8th Floor\nBlack-tie dinner co-hosted by Summit Board and the Wharton School.", "2 Hours", "Apple", "Sun")
             ], 1:[
-                (TimelinePoint(), UIColor.black, "2:30: Day 2", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", nil, nil, "Sun"),
-                (TimelinePoint(), UIColor.black, "15:30", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", nil, nil, "Sun"),
-                (TimelinePoint(), UIColor.black, "16:30", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", "150 mins", "Apple", "Sun"),
-                (TimelinePoint(), UIColor.clear, "19:00", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", nil, nil, "Moon")
+                (TimelinePoint(), UIColor.black, "Audience Registration - Regular", "8:00 AM = 10:00 AM\nLocation TBD\nAudience register arrival with staff. Summit brochure, and badge will be distributed.", "2 Hours", nil, "Sun"),
+                (TimelinePoint(), UIColor.black, "Audience Registration - Late", "10:00 AM - 1:00 PM\nLocation TBD\nAudience register arrival with staff. Summit brochure, and badge will be distributed.", "3 Hours", "Apple", "Sun"),
+                (TimelinePoint(), UIColor.clear, "Opening Ceremony", "9:00 AM - 11:00 AM\nIrvine Auditorium\nWelcoming speech will be given by Summit President and Dean of the Wharton School, followed by five keynote speakers.\nSpeakers: Fu Ying, Guo Guangchang, Zhu Baoguo, Su Mang, Philip Rosler", "2 Hours", nil, "Sun"),
+                (TimelinePoint(), UIColor.clear, "Real Estate Panel", "12:30 PM - 2:30 PM\nAnnenberg Center\nSpeakers: Zhou Xin, Yuan Yue, Wang Xi, Wang Gehong", "2 Hours", nil, "Sun"),
+                (TimelinePoint(), UIColor.clear, "Investment Panel", "12:30 PM - 2:30 PM\nIrvine Auditorium\nSpeakers: Albert Ng, Yup Kim, Yang Guang", "2 Hours", nil, "Sun"),
+                (TimelinePoint(), UIColor.clear, "International Relations Panel", "3:00 PM - 5:00 PM\nAnnenberg Center\nSpeakers: Fu Ying，Kevin Rudd，Cui Tiankai", "2 Hours", nil, "Sun"),
+                (TimelinePoint(), UIColor.clear, "Fashion and Entertainment Panel", "3:00 PM - 5:00 PM\nIrvine Auditorium\nSpeakers: Zhou Wen, Yang Ming, Su Mang", "2 Hours", nil, "Sun"),
+                (TimelinePoint(), UIColor.clear, "Career Fair", "5:00 PM - 7:30 PM\nAnnenberg Center\nCareer Fair by participating companies, Audience can deliver resume and exchange contact.", "2 Hours 30 mins", nil, "Sun"),
+                (TimelinePoint(), UIColor.clear, "INNO Talk", "7:00 PM - 9:00 PM\nAnnenberg Center\nConversation between startups, industry leaders and investors.", "2 Hours", nil, "Sun"),
+                (TimelinePoint(), UIColor.clear, "Special Event and Social Innovation", "7:00 PM - 9:00 PM\nThe Study\nYoung global leaders sharing stories of innovation.", "2 Hours", "Apple", "Sun"),
             ], 2:[
-                (TimelinePoint(), UIColor.black, "3:30: Day 3", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", nil, nil, "Sun"),
-                (TimelinePoint(), UIColor.black, "15:30", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", nil, nil, "Sun"),
-                (TimelinePoint(), UIColor.black, "16:30", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", "150 mins", "Apple", "Sun"),
-                (TimelinePoint(), UIColor.clear, "19:00", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", nil, nil, "Moon")
+                (TimelinePoint(), UIColor.black, "Corporate Sustainability and Social Responsibility Panel", "10:00 AM - 12:00 PM\nAnnenberg Center\nSpeakers: Zhu Xudong, Deng Fei, Wang Zhenyao, Pan Jiangxue", "2 Hours", nil, "Sun"),
+                (TimelinePoint(), UIColor.black, "Blockchain and Application in China’s Economy Panel", "10:00 AM - 12:00 PM\nIrvine Auditorium\nSpeakers: Ying Shuling, Chen Weixing, Dai Kebin, Jeff Garzik", "2 Hours", nil, "Sun"),
+                (TimelinePoint(), UIColor.black, "Closing Ceremony", "12:30 PM - 3:15 PM\nIrvine Auditorium\nClosing remarks will be given by Summit Vice President and Vice Dean of the Wharton School, followed by four keynote speakers.\nSpeakers: Cui Tiankai, Pete Walker, Wang Zhenyao", "2 Hours 45 mins", "Apple", "Sun")
             ]]
     }
     
