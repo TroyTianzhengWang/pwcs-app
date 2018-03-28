@@ -112,7 +112,7 @@ class DataServices {
             (TimelinePoint(), UIColor.clear, "VIP Dinner", "7:00 PM - 9:00 PM\nHuntsman Hall 8th Floor\nBlack-tie dinner co-hosted by Summit Board and the Wharton School.", "2 Hours", "Apple", "Sun")
             ], 1:[
                 (TimelinePoint(), UIColor.black, "Audience Registration - Regular", "8:00 AM = 10:00 AM\nLocation TBD\nAudience register arrival with staff. Summit brochure, and badge will be distributed.", "2 Hours", nil, "Sun"),
-                (TimelinePoint(), UIColor.black, "Audience Registration - Late", "10:00 AM - 1:00 PM\nLocation TBD\nAudience register arrival with staff. Summit brochure, and badge will be distributed.", "3 Hours", "Apple", "Sun"),
+                (TimelinePoint(), UIColor.black, "Audience Registration - Late", "10:00 AM - 1:00 PM\nLocation TBD\nAudience register arrival with staff. Summit brochure, and badge will be distributed.", "3 Hours", nil, "Sun"),
                 (TimelinePoint(), UIColor.clear, "Opening Ceremony", "9:00 AM - 11:00 AM\nIrvine Auditorium\nWelcoming speech will be given by Summit President and Dean of the Wharton School, followed by five keynote speakers.\nSpeakers: Fu Ying, Guo Guangchang, Zhu Baoguo, Su Mang, Philip Rosler", "2 Hours", nil, "Sun"),
                 (TimelinePoint(), UIColor.clear, "Real Estate Panel", "12:30 PM - 2:30 PM\nAnnenberg Center\nSpeakers: Zhou Xin, Yuan Yue, Wang Xi, Wang Gehong", "2 Hours", nil, "Sun"),
                 (TimelinePoint(), UIColor.clear, "Investment Panel", "12:30 PM - 2:30 PM\nIrvine Auditorium\nSpeakers: Albert Ng, Yup Kim, Yang Guang", "2 Hours", nil, "Sun"),
@@ -120,7 +120,7 @@ class DataServices {
                 (TimelinePoint(), UIColor.clear, "Fashion and Entertainment Panel", "3:00 PM - 5:00 PM\nIrvine Auditorium\nSpeakers: Zhou Wen, Yang Ming, Su Mang", "2 Hours", nil, "Sun"),
                 (TimelinePoint(), UIColor.clear, "Career Fair", "5:00 PM - 7:30 PM\nAnnenberg Center\nCareer Fair by participating companies, Audience can deliver resume and exchange contact.", "2 Hours 30 mins", nil, "Sun"),
                 (TimelinePoint(), UIColor.clear, "INNO Talk", "7:00 PM - 9:00 PM\nAnnenberg Center\nConversation between startups, industry leaders and investors.", "2 Hours", nil, "Sun"),
-                (TimelinePoint(), UIColor.clear, "Special Event and Social Innovation", "7:00 PM - 9:00 PM\nThe Study\nYoung global leaders sharing stories of innovation.", "2 Hours", "Apple", "Sun"),
+                (TimelinePoint(), UIColor.clear, "Special Event and Social Innovation", "7:00 PM - 9:00 PM\nThe Study\nYoung global leaders sharing stories of innovation.", "2 Hours", "Apple", "Sun")
             ], 2:[
                 (TimelinePoint(), UIColor.black, "Corporate Sustainability and Social Responsibility Panel", "10:00 AM - 12:00 PM\nAnnenberg Center\nSpeakers: Zhu Xudong, Deng Fei, Wang Zhenyao, Pan Jiangxue", "2 Hours", nil, "Sun"),
                 (TimelinePoint(), UIColor.black, "Blockchain and Application in China’s Economy Panel", "10:00 AM - 12:00 PM\nIrvine Auditorium\nSpeakers: Ying Shuling, Chen Weixing, Dai Kebin, Jeff Garzik", "2 Hours", nil, "Sun"),
