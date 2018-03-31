@@ -52,42 +52,42 @@ private struct PagingMenuOptions: PagingMenuControllerCustomizable {
     
     fileprivate struct MenuItem1: MenuItemViewCustomizable {
         var displayMode: MenuItemDisplayMode {
-            return .text(title: MenuItemText(text: "Openning"))
+            return .text(title: MenuItemText(text: NSLocalizedString("opening", comment: "")))
         }
     }
     fileprivate struct MenuItem2: MenuItemViewCustomizable {
         var displayMode: MenuItemDisplayMode {
-            return .text(title: MenuItemText(text: "Finance"))
+            return .text(title: MenuItemText(text: NSLocalizedString("finance", comment: "")))
         }
     }
     fileprivate struct MenuItem3: MenuItemViewCustomizable {
         var displayMode: MenuItemDisplayMode {
-            return .text(title: MenuItemText(text: "International Relations"))
+            return .text(title: MenuItemText(text: NSLocalizedString("ir", comment: "")))
         }
     }
     fileprivate struct MenuItem4: MenuItemViewCustomizable {
         var displayMode: MenuItemDisplayMode {
-            return .text(title: MenuItemText(text: "Real Estate"))
+            return .text(title: MenuItemText(text: NSLocalizedString("estate", comment: "")))
         }
     }
     fileprivate struct MenuItem5: MenuItemViewCustomizable {
         var displayMode: MenuItemDisplayMode {
-            return .text(title: MenuItemText(text: "Technology"))
+            return .text(title: MenuItemText(text: NSLocalizedString("technology", comment: "")))
         }
     }
     fileprivate struct MenuItem6: MenuItemViewCustomizable {
         var displayMode: MenuItemDisplayMode {
-            return .text(title: MenuItemText(text: "Fashion"))
+            return .text(title: MenuItemText(text: NSLocalizedString("fashion", comment: "")))
         }
     }
     fileprivate struct MenuItem7: MenuItemViewCustomizable {
         var displayMode: MenuItemDisplayMode {
-            return .text(title: MenuItemText(text: "Social"))
+            return .text(title: MenuItemText(text: NSLocalizedString("social", comment: "")))
         }
     }
     fileprivate struct MenuItem8: MenuItemViewCustomizable {
         var displayMode: MenuItemDisplayMode {
-            return .text(title: MenuItemText(text: "Closing"))
+            return .text(title: MenuItemText(text: NSLocalizedString("closing", comment: "")))
         }
     }
 }
@@ -129,7 +129,7 @@ class SpeakersVC: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        self.navigationController?.navigationBar.topItem?.title = "Speakers"
+        self.navigationController?.navigationBar.topItem?.title = NSLocalizedString("speakers", comment: "")
         navigationController?.navigationBar.titleTextAttributes = [
             NSAttributedStringKey.foregroundColor : UIColor.black
         ]

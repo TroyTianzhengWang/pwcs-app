@@ -1,0 +1,29 @@
+/* 
+  Localizable.strings
+  pwcs
+
+  Created by Zhilei Zheng on 3/31/18.
+  Copyright © 2018 Zhilei Zheng. All rights reserved.
+*/
+"schedule" = "日程安排";
+"panels" = "论坛板块";
+"events" = "其他活动";
+"speakers" = "参会嘉宾";
+"help" = "更多帮助";
+
+// Sub Tab Items
+"friday" = "13 星期五";
+"saturday" = "14 星期六";
+"sunday" = "15 星期日";
+
+"faq" = "常见问题";
+"about" = "关于我们";
+
+"technology" = "金融科技";
+"fashion" = "时尚娱乐";
+"ir" = "国际关系";
+"estate" = "地产市场";
+"finance" = "经济金融";
+"social" = "社会责任";
+"opening" = "开幕式";
+"closing" = "闭幕式";

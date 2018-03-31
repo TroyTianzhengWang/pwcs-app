@@ -1,0 +1,32 @@
+/* 
+  Localizable.strings
+  pwcs
+
+  Created by Zhilei Zheng on 3/31/18.
+  Copyright © 2018 Zhilei Zheng. All rights reserved.
+*/
+
+// Main Tab Items
+"schedule" = "Schedule";
+"panels" = "Panels";
+"events" = "Events";
+"speakers" = "Speakers";
+"help" = "Help";
+
+// Sub Tab Items
+"friday" = "13 Friday";
+"saturday" = "14 Saturday";
+"sunday" = "15 Sunday";
+
+"faq" = "FAQ";
+"about" = "About Us";
+
+"technology" = "Technology";
+"fashion" = "Arts and Fasion";
+"ir" = "International Relations";
+"estate" = "Real Estates";
+"finance" = "Finance";
+"social" = "Social Responsibilities";
+"opening" = "Opening Ceremony";
+"closing" = "Closing Ceremony";
+

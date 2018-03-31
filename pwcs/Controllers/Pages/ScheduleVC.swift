@@ -55,6 +55,7 @@ class ScheduleVC: UITableViewController {
         cell.descriptionLabel.text = description
         cell.descriptionLabel.font = UIFont(font: .avenirNextRegular, size: 15)
         cell.lineInfoLabel.text = lineInfo
+        cell.bubbleColor = UIColor.red
         cell.titleLabel.font = UIFont(font: .avenirNextDemiBold, size: 16)
         
         if let thumbnail = thumbnail {

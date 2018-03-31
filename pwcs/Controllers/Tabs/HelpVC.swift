@@ -38,13 +38,13 @@ private struct PagingMenuOptions: PagingMenuControllerCustomizable {
     
     fileprivate struct MenuItem1: MenuItemViewCustomizable {
         var displayMode: MenuItemDisplayMode {
-            return .text(title: MenuItemText(text: "FAQ"))
+            return .text(title: MenuItemText(text: NSLocalizedString("faq", comment: "")))
         }
     }
     
     fileprivate struct MenuItem2: MenuItemViewCustomizable {
         var displayMode: MenuItemDisplayMode {
-            return .text(title: MenuItemText(text: "About"))
+            return .text(title: MenuItemText(text: NSLocalizedString("about", comment: "")))
         }
     }
 }
@@ -86,7 +86,7 @@ class HelpVC: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        self.navigationController?.navigationBar.topItem?.title = "Help"
+        self.navigationController?.navigationBar.topItem?.title = NSLocalizedString("help", comment: "")
         navigationController?.navigationBar.titleTextAttributes = [
             NSAttributedStringKey.foregroundColor : UIColor.black
         ]

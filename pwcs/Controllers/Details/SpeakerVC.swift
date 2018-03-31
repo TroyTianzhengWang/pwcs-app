@@ -26,7 +26,7 @@ class SpeakerVC: UIViewController {
     
     func setUpDefaults() {
         view.backgroundColor = UIColor.white
-        self.navigationController?.navigationBar.topItem?.title = "Speakers"
+        self.navigationController?.navigationBar.topItem?.title = NSLocalizedString("speakers", comment: "")
         self.navigationController?.navigationBar.tintColor = .red
         self.title = speaker!.name
     }

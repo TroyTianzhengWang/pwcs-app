@@ -28,7 +28,7 @@ class EventVC: UIViewController {
     
     func setUpDefaults() {
         view.backgroundColor = UIColor.white
-        self.navigationController?.navigationBar.topItem?.title = "Events"
+        self.navigationController?.navigationBar.topItem?.title = NSLocalizedString("events", comment: "")
         self.navigationController?.navigationBar.tintColor = .red
         self.title = event!.name
         let rightButton = UIBarButtonItem()

@@ -43,7 +43,7 @@ class PanelVC: UIViewController {
     
     private func setUpBackground() {
         view.backgroundColor = .white
-        self.navigationController?.navigationBar.topItem?.title = "Panels"
+        self.navigationController?.navigationBar.topItem?.title = NSLocalizedString("panels", comment: "")
         self.navigationController?.navigationBar.tintColor = .red
         self.title = panel.name
     }

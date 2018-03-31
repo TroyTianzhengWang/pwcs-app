@@ -38,12 +38,12 @@ private struct PagingMenuOptions: PagingMenuControllerCustomizable {
     
     fileprivate struct MenuItem1: MenuItemViewCustomizable {
         var displayMode: MenuItemDisplayMode {
-            return .text(title: MenuItemText(text: "Panels"))
+            return .text(title: MenuItemText(text: NSLocalizedString("panels", comment: "")))
         }
     }
     fileprivate struct MenuItem2: MenuItemViewCustomizable {
         var displayMode: MenuItemDisplayMode {
-            return .text(title: MenuItemText(text: "Events"))
+            return .text(title: MenuItemText(text: NSLocalizedString("events", comment: "")))
         }
     }
 }
@@ -86,7 +86,7 @@ class AgendaVC: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        navigationController?.navigationBar.topItem?.title = "Agenda"
+        navigationController?.navigationBar.topItem?.title = NSLocalizedString("panels", comment: "")
         navigationController?.navigationBar.titleTextAttributes = [
             NSAttributedStringKey.foregroundColor : UIColor.black
         ]

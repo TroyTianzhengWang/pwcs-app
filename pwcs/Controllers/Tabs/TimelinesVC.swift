@@ -41,17 +41,17 @@ private struct PagingMenuOptions: PagingMenuControllerCustomizable {
     
     fileprivate struct MenuItem1: MenuItemViewCustomizable {
         var displayMode: MenuItemDisplayMode {
-            return .text(title: MenuItemText(text: "13 Friday"))
+            return .text(title: MenuItemText(text: NSLocalizedString("friday", comment: "")))
         }
     }
     fileprivate struct MenuItem2: MenuItemViewCustomizable {
         var displayMode: MenuItemDisplayMode {
-            return .text(title: MenuItemText(text: "14 Saturday"))
+            return .text(title: MenuItemText(text: NSLocalizedString("saturday", comment: "")))
         }
     }
     fileprivate struct MenuItem3: MenuItemViewCustomizable {
         var displayMode: MenuItemDisplayMode {
-            return .text(title: MenuItemText(text: "15 Sunday"))
+            return .text(title: MenuItemText(text: NSLocalizedString("sunday", comment: "")))
         }
     }
 }
@@ -97,7 +97,9 @@ class TimelinesVC: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        navigationController?.navigationBar.topItem?.title = "Schedule"
+        let formatString = NSLocalizedString("schedule",
+                                             comment: "My Schedule is Cool")
+        navigationController?.navigationBar.topItem?.title = formatString
         navigationController?.navigationBar.titleTextAttributes = [
             NSAttributedStringKey.foregroundColor : UIColor.black
         ]
