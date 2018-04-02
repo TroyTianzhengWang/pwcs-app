@@ -59,13 +59,13 @@ class EventCell: UICollectionViewCell {
     func setUpName(_ event: Event) {
         eventName.text = event.name
         eventName.textAlignment = .left
-        eventName.font = UIFont(font: .avenirNextCondensedDemiBold, size: 30)
+        eventName.font = UIFont(font: .avenirNextCondensedDemiBold, size: 25)
         eventName.textColor = .white
         self.addSubview(eventName)
         eventName.snp.makeConstraints{ (make) -> Void in
             make.left.equalTo(self).offset(10)
             make.top.equalTo(eventTime).offset(25)
-            make.height.equalTo(35)
+            make.height.equalTo(30)
             make.width.equalTo(self).offset(20)
         }
     }
@@ -78,7 +78,7 @@ class EventCell: UICollectionViewCell {
         self.addSubview(eventLocation)
         eventLocation.snp.makeConstraints{ (make) -> Void in
             make.left.equalTo(self).offset(10)
-            make.top.equalTo(eventName).offset(40)
+            make.top.equalTo(eventName.snp.bottom).offset(5)
             make.height.equalTo(20)
             make.width.equalTo(self).offset(20)
         }

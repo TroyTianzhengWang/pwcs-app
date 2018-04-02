@@ -68,8 +68,8 @@ class TimelinesVC: UIViewController {
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.red]
         let options = PagingMenuOptions()
         let pagingMenuController = PagingMenuController(options: options)
-        pagingMenuController.view.frame.origin.y += 64
-        pagingMenuController.view.frame.size.height -= 64
+        pagingMenuController.view.frame.origin.y += options.getLayoutHeight()
+        pagingMenuController.view.frame.size.height -= options.getLayoutHeight()
         pagingMenuController.onMove = { state in
             switch state {
             case let .willMoveController(menuController, previousMenuController):

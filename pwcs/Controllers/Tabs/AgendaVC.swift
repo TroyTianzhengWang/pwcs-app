@@ -57,8 +57,8 @@ class AgendaVC: UIViewController {
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.red]
         let options = PagingMenuOptions()
         let pagingMenuController = PagingMenuController(options: options)
-        pagingMenuController.view.frame.origin.y += 64
-        pagingMenuController.view.frame.size.height -= 64
+        pagingMenuController.view.frame.origin.y += options.getLayoutHeight()
+        pagingMenuController.view.frame.size.height -= options.getLayoutHeight()
         pagingMenuController.onMove = { state in
             switch state {
             case let .willMoveController(menuController, previousMenuController):
@@ -90,6 +90,19 @@ class AgendaVC: UIViewController {
         navigationController?.navigationBar.titleTextAttributes = [
             NSAttributedStringKey.foregroundColor : UIColor.black
         ]
+    }
+}
+
+extension PagingMenuControllerCustomizable {
+    func getLayoutHeight() -> CGFloat {
+        switch UIScreen.main.nativeBounds.height {
+        case 2436:
+            print("iPhone X")
+            return 90
+        default:
+            print("unknown")
+            return 64
+        }
     }
 }
 
