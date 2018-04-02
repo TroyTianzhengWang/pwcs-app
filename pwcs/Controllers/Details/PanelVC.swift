@@ -15,7 +15,7 @@ class PanelVC: UIViewController {
     
     var tableView = UITableView()
     
-    var panel = Panel(type: .finance, name: "Finance Panel", location: LocationType.annenburgCenter, time: "April 14th, 11:00AM - 2:00PM", background:#imageLiteral(resourceName: "panelimg"), desc: "For the past decade, low real interest rates, declining productivity growth, and lack of attractive domestic investment opportunities have forced global investors to seek higher returns in less familiar territories. ")
+    var panel = Panel(type: .finance, name: "Finance Panel", location: LocationType.annenbergCenter, time: "April 14th, 11:00AM - 2:00PM", background:#imageLiteral(resourceName: "panelimg"), desc: "For the past decade, low real interest rates, declining productivity growth, and lack of attractive domestic investment opportunities have forced global investors to seek higher returns in less familiar territories. ")
     
     var speakers = [Speaker]()
     
@@ -24,6 +24,11 @@ class PanelVC: UIViewController {
         let rightButton = UIBarButtonItem()
         rightButton.setIcon(icon: .ionicons(.map), iconSize: 25, color: .red, cgRect: CGRect(x: 10, y: 5, width: 25, height: 25), target: self, action: #selector(addTapped))
         navigationItem.rightBarButtonItem = rightButton
+        
+        let leftButton = UIBarButtonItem()
+        leftButton.setIcon(icon: .ionicons(.iosArrowBack), iconSize: 29, color: .red, cgRect: CGRect(x: 0, y: 3, width: 29, height: 29), target: self, action: #selector(goBack))
+        navigationItem.leftBarButtonItem = leftButton
+        
         self.navigationController?.navigationBar.tintColor = .red
     }
     
@@ -35,8 +40,12 @@ class PanelVC: UIViewController {
         tableView.allowsSelection = false;
     }
     
+    @objc func goBack() {
+        navigationController?.popViewController(animated: true)
+    }
+    
     @objc func addTapped() {
-        let location = CLLocation(latitude: 39.952385, longitude: -75.190356)
+        let location = panel.location.translateCoordinates()
         let coordinates = location.coordinate
         let regionDistance:CLLocationDistance = 1000
         let regionSpan = MKCoordinateRegionMakeWithDistance(coordinates, regionDistance, regionDistance)
@@ -46,14 +55,12 @@ class PanelVC: UIViewController {
         ]
         let placemark = MKPlacemark(coordinate: coordinates, addressDictionary: nil)
         let mapItem = MKMapItem(placemark: placemark)
-        mapItem.name = "Annenburg Center"
+        mapItem.name = panel.location.translateLocation()
         mapItem.openInMaps(launchOptions: options)
     }
     
     private func setUpBackground() {
         view.backgroundColor = .white
-        self.navigationController?.navigationBar.topItem?.title = NSLocalizedString("panels", comment: "")
-        self.navigationController?.navigationBar.tintColor = .red
         self.title = panel.name
     }
     

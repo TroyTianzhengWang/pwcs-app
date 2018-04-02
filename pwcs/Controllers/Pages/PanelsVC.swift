@@ -51,7 +51,6 @@ extension PanelsVC: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as? PanelCell {
-//            let panel = Panel(name: "Social Responsibility", location: .annenburgCenter, time: "10AM - 11:20AM | Saturday", background: #imageLiteral(resourceName: "panel-social"), desc: "Hello")
             cell.setUpView(with: panels[indexPath.row])
             return cell
         } else {
@@ -62,6 +61,7 @@ extension PanelsVC: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let panelVC = PanelVC()
         panelVC.setUpForPanel(panel: panels[indexPath.row])
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: nil, action: nil)
         navigationController?.pushViewController(panelVC, animated: true)
     }
     

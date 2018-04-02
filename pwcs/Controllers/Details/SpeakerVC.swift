@@ -16,12 +16,20 @@ class SpeakerVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let leftButton = UIBarButtonItem()
+        leftButton.setIcon(icon: .ionicons(.iosArrowBack), iconSize: 29, color: .red, cgRect: CGRect(x: 0, y: 3, width: 29, height: 29), target: self, action: #selector(goBack))
+        navigationItem.leftBarButtonItem = leftButton
+    }
+    
+    @objc func goBack() {
+        navigationController?.popViewController(animated: true)
     }
     
     func setUpSpeaker(with speaker : Speaker) {
         self.speaker = speaker
         setUpDefaults()
         setUpTableView()
+        tableView.allowsSelection = false;
     }
     
     func setUpDefaults() {

@@ -12,7 +12,5 @@ target 'pwcs' do
   pod "PagingMenuController"
   pod 'UIFontComplete'
   pod "TimelineTableViewCell"
-  pod 'ExpandableCell'
-  pod 'AEAccordion'
   pod 'Savory', :git => 'https://github.com/Nandiin/Savory.git'
 end

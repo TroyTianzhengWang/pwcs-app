@@ -1,6 +1,4 @@
 PODS:
-  - AEAccordion (2.0.1)
-  - ExpandableCell (1.2.2)
   - PagingMenuController (2.2.0)
   - Savory (0.1.1)
   - SnapKit (4.0.0)
@@ -10,8 +8,6 @@ PODS:
   - UIFontComplete (3.0.0)
 
 DEPENDENCIES:
-  - AEAccordion
-  - ExpandableCell
   - PagingMenuController
   - Savory (from `https://github.com/Nandiin/Savory.git`)
   - SnapKit (~> 4.0.0)
@@ -30,8 +26,6 @@ CHECKOUT OPTIONS:
     :git: https://github.com/Nandiin/Savory.git
 
 SPEC CHECKSUMS:
-  AEAccordion: 85bd1ec5c0d26f09dfd2c74600f849f95fed63cd
-  ExpandableCell: f2d99f9ae03a8c393e268adddaeb7f6d2525a76e
   PagingMenuController: 6176618987bb170096664f2da097313e45ed9c31
   Savory: 5523392d8a76d995812809ae31499d69aaa03305
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
@@ -40,6 +34,6 @@ SPEC CHECKSUMS:
   TimelineTableViewCell: 71a4bc787bfeb5a85083171d18b113a5f5db2be8
   UIFontComplete: 5b0f59a83308816c610164b79a2540b3520f9b72
 
-PODFILE CHECKSUM: 9a6691591c9b080ad769cb086ba6794881892bf5
+PODFILE CHECKSUM: 3426292a655c5369e77f64a69f403195f1fc5b96
 
 COCOAPODS: 1.4.0

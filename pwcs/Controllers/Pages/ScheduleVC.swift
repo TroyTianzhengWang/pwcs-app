@@ -24,6 +24,7 @@ class ScheduleVC: UITableViewController {
                                              bundle: Bundle(url: nibUrl!)!)
         tableView.register(timelineTableViewCellNib, forCellReuseIdentifier: "TimelineTableViewCell")
         tableView.separatorColor = .clear
+        tableView.allowsSelection = false
         tableView.reloadData()
     }
     

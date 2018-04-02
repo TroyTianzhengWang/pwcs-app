@@ -23,6 +23,7 @@ class EventVC: UIViewController {
         self.event = event
         setUpDefaults()
         setUpTableView()
+        tableView.allowsSelection = false;
     }
     
     
@@ -31,13 +32,23 @@ class EventVC: UIViewController {
         self.navigationController?.navigationBar.topItem?.title = NSLocalizedString("events", comment: "")
         self.navigationController?.navigationBar.tintColor = .red
         self.title = event!.name
+        
         let rightButton = UIBarButtonItem()
         rightButton.setIcon(icon: .ionicons(.map), iconSize: 25, color: .red, cgRect: CGRect(x: 10, y: 5, width: 25, height: 25), target: self, action: #selector(addTapped))
         navigationItem.rightBarButtonItem = rightButton
+        
+        
+        let leftButton = UIBarButtonItem()
+        leftButton.setIcon(icon: .ionicons(.iosArrowBack), iconSize: 29, color: .red, cgRect: CGRect(x: 0, y: 3, width: 29, height: 29), target: self, action: #selector(goBack))
+        navigationItem.leftBarButtonItem = leftButton
+    }
+    
+    @objc func goBack() {
+        navigationController?.popViewController(animated: true)
     }
     
     @objc func addTapped() {
-        let location = CLLocation(latitude: 39.952385, longitude: -75.190356)
+        let location = event!.location.translateCoordinates()
         let coordinates = location.coordinate
         let regionDistance:CLLocationDistance = 1000
         let regionSpan = MKCoordinateRegionMakeWithDistance(coordinates, regionDistance, regionDistance)
@@ -47,7 +58,7 @@ class EventVC: UIViewController {
         ]
         let placemark = MKPlacemark(coordinate: coordinates, addressDictionary: nil)
         let mapItem = MKMapItem(placemark: placemark)
-        mapItem.name = event!.name
+        mapItem.name = event!.location.translateLocation()
         mapItem.openInMaps(launchOptions: options)
     }
     

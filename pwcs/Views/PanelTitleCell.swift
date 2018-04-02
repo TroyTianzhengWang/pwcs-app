@@ -76,7 +76,7 @@ class PanelTitleCell: UITableViewCell {
     
     func setUpTimeLoc(_ panel: Panel) {
         panelTime.setIcon(prefixText: "", prefixTextFont: UIFont(font: .avenirNextRegular, size: 16)!, prefixTextColor: .black, icon: .icofont(.calendar), iconColor: .black, postfixText: "  \(panel.time)", postfixTextFont: UIFont(font: .avenirNextRegular, size: 16)!, postfixTextColor: .black, iconSize: 16)
-        panelLocation.setIcon(prefixText: "", prefixTextFont: UIFont(font: .avenirNextRegular, size: 16)!, prefixTextColor: .black, icon: .icofont(.locationPin), iconColor: .black, postfixText: "  \(panel.location)", postfixTextFont: UIFont(font: .avenirNextRegular, size: 16)!, postfixTextColor: .black, iconSize: 16)
+        panelLocation.setIcon(prefixText: "", prefixTextFont: UIFont(font: .avenirNextRegular, size: 16)!, prefixTextColor: .black, icon: .icofont(.locationPin), iconColor: .black, postfixText: "  \(panel.location.translateLocation())", postfixTextFont: UIFont(font: .avenirNextRegular, size: 16)!, postfixTextColor: .black, iconSize: 16)
         panelTime.textAlignment = .left
         panelLocation.textAlignment = .left
         panelTime.snp.makeConstraints{(make) -> Void in

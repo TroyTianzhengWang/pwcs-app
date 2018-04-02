@@ -36,6 +36,7 @@
 		CF85C4A0200D0921008B02CB /* PanelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85C49F200D0921008B02CB /* PanelCell.swift */; };
 		CF8E1283204F23A300247531 /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8E1282204F23A300247531 /* AboutVC.swift */; };
 		CF95B7BE206FED76004080F7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF95B7C0206FED76004080F7 /* Localizable.strings */; };
+		CF95B7C420728298004080F7 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF95B7C320728298004080F7 /* Enums.swift */; };
 		CFB63E8E2060A4E200777368 /* TimelinesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB63E8D2060A4E200777368 /* TimelinesVC.swift */; };
 		CFDB06F2205C471200938500 /* SpeakerDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDB06F1205C471200938500 /* SpeakerDetailsCell.swift */; };
 		CFDB06F4205C58E600938500 /* EventTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDB06F3205C58E600938500 /* EventTitleCell.swift */; };
@@ -78,6 +79,7 @@
 		CF95B7BF206FED76004080F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CF95B7C1206FEDBA004080F7 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		CF95B7C2206FEDBA004080F7 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		CF95B7C320728298004080F7 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		CFB63E8D2060A4E200777368 /* TimelinesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelinesVC.swift; sourceTree = "<group>"; };
 		CFDB06F1205C471200938500 /* SpeakerDetailsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerDetailsCell.swift; sourceTree = "<group>"; };
 		CFDB06F3205C58E600938500 /* EventTitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTitleCell.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 				CF001EEC2013D4CB00EF7EAD /* Speaker.swift */,
 				CF001EF02013E0A300EF7EAD /* Panel.swift */,
 				CF001F0020144EBE00EF7EAD /* Event.swift */,
+				CF95B7C320728298004080F7 /* Enums.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -322,8 +325,6 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-pwcs/Pods-pwcs-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/AEAccordion/AEAccordion.framework",
-				"${BUILT_PRODUCTS_DIR}/ExpandableCell/ExpandableCell.framework",
 				"${BUILT_PRODUCTS_DIR}/PagingMenuController/PagingMenuController.framework",
 				"${BUILT_PRODUCTS_DIR}/Savory/Savory.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
@@ -334,8 +335,6 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AEAccordion.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ExpandableCell.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PagingMenuController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Savory.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
@@ -391,6 +390,7 @@
 				CF001EEF2013DCDE00EF7EAD /* DataServices.swift in Sources */,
 				CFDB06F2205C471200938500 /* SpeakerDetailsCell.swift in Sources */,
 				CF573C69200C9CE500A980CC /* ScheduleVC.swift in Sources */,
+				CF95B7C420728298004080F7 /* Enums.swift in Sources */,
 				CF85C4A0200D0921008B02CB /* PanelCell.swift in Sources */,
 				CFDB06F6205C58F800938500 /* EventMapCell.swift in Sources */,
 				CF8E1283204F23A300247531 /* AboutVC.swift in Sources */,

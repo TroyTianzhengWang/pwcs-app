@@ -79,7 +79,7 @@ class EventTitleCell: UITableViewCell {
     
     func setUpTimeLoc(_ event: Event) {
         eventTime.setIcon(prefixText: "", prefixTextFont: UIFont(font: .avenirNextRegular, size: 16)!, prefixTextColor: .black, icon: .icofont(.calendar), iconColor: .black, postfixText: "  \(event.time)", postfixTextFont: UIFont(font: .avenirNextRegular, size: 16)!, postfixTextColor: .black, iconSize: 16)
-        eventLocation.setIcon(prefixText: "", prefixTextFont: UIFont(font: .avenirNextRegular, size: 16)!, prefixTextColor: .black, icon: .icofont(.locationPin), iconColor: .black, postfixText: "  \(event.location)", postfixTextFont: UIFont(font: .avenirNextRegular, size: 16)!, postfixTextColor: .black, iconSize: 16)
+        eventLocation.setIcon(prefixText: "", prefixTextFont: UIFont(font: .avenirNextRegular, size: 16)!, prefixTextColor: .black, icon: .icofont(.locationPin), iconColor: .black, postfixText: "  \(event.location.translateLocation())", postfixTextFont: UIFont(font: .avenirNextRegular, size: 16)!, postfixTextColor: .black, iconSize: 16)
         eventTime.textAlignment = .left
         eventLocation.textAlignment = .left
         eventTime.snp.makeConstraints{(make) -> Void in

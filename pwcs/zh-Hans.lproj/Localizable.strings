@@ -6,7 +6,7 @@
   Copyright © 2018 Zhilei Zheng. All rights reserved.
 */
 "schedule" = "日程安排";
-"panels" = "论坛板块";
+"panels" = "论坛版块";
 "events" = "其他活动";
 "speakers" = "参会嘉宾";
 "help" = "更多帮助";
