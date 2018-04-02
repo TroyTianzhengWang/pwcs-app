@@ -76,9 +76,9 @@ class PanelSpeakerCell: UITableViewCell {
         speakerDesc.font = UIFont(font: .avenirNextRegular, size: 15)
         speakerDesc.snp.makeConstraints{(make) -> Void in
             make.left.equalTo(speakerImage.snp.right).offset(20)
-            make.right.equalTo(bgView).offset(10)
+            make.right.equalTo(bgView).offset(-10)
             make.centerY.equalTo(bgView).offset(15)
-            make.height.equalTo(15)
+            make.height.equalTo(18)
         }
     }
     

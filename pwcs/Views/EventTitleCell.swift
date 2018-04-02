@@ -55,8 +55,10 @@ class EventTitleCell: UITableViewCell {
     
     func setUpImage(_ event: Event) {
         eventImage.image = event.background
-        eventImage.layer.cornerRadius = 6.0
-        eventImage.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+        if #available(iOS 11.0, *) {
+            eventImage.layer.cornerRadius = 6.0
+            eventImage.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+        }
         eventImage.clipsToBounds = true
         eventImage.snp.makeConstraints{(make) -> Void in
             make.top.equalTo(bgView)

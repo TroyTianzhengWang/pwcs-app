@@ -13,13 +13,13 @@ import UIFontComplete
 
 class FaqVC: UIViewController, SavoryViewDelegate {
     
-    var questions: [(question: String, answer: String)] = [("Question 1", "Answer 1"), ("Question 2", "Answer 2")]
+    var questions: [(question: String, answer: String)] = [(question: "What?", answer: "this"), (question: "Where?", answer: "this"), (question: "Who?", answer: "this"), (question: "Why?", answer: "this")]
     
     var savoryView: SavoryView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        questions = DataServices.shared.getFAQs()
         /* 1. Initiate SavoryView */
         savoryView = SavoryView(frame: view.frame)
         // offset for status bar
@@ -28,7 +28,11 @@ class FaqVC: UIViewController, SavoryViewDelegate {
         
         /* 2. Provide a implementation of SavoryStateProtivder protocol */
         // Savory providers a simple implementation - SimpleStateProvider
-        savoryView.stateProvider = SimpleStateProvider([.collapsed, .collapsed])
+        var states = [SavoryPanelState]()
+        for _ in questions {
+            states.append(.collapsed)
+        }
+        savoryView.stateProvider = SimpleStateProvider(states)
         
         /* 3. Set the reuse identifiers for header and body cells */
         savoryView.headerIdentifier = "header"
@@ -62,7 +66,6 @@ class FaqVC: UIViewController, SavoryViewDelegate {
     }
     
     func bodyCell(forPanelAt index: SavoryPanelIndex, in savoryView: SavoryView) -> SavoryBodyCell {
-        
         // almost same as headerCell(forPanelAt:in:)
         let cell = savoryView.dequeueReusableBodyCell(forPanelAt: index)
         cell.textLabel?.numberOfLines = 0

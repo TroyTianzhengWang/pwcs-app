@@ -51,7 +51,6 @@ private struct PagingMenuOptions: PagingMenuControllerCustomizable {
 class AgendaVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         view.backgroundColor = UIColor.white
         navigationController?.navigationBar.barTintColor = UIColor.white
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.red]
@@ -59,26 +58,6 @@ class AgendaVC: UIViewController {
         let pagingMenuController = PagingMenuController(options: options)
         pagingMenuController.view.frame.origin.y += options.getLayoutHeight()
         pagingMenuController.view.frame.size.height -= options.getLayoutHeight()
-        pagingMenuController.onMove = { state in
-            switch state {
-            case let .willMoveController(menuController, previousMenuController):
-                print(previousMenuController)
-                print(menuController)
-            case let .didMoveController(menuController, previousMenuController):
-                print(previousMenuController)
-                print(menuController)
-            case let .willMoveItem(menuItemView, previousMenuItemView):
-                print(previousMenuItemView)
-                print(menuItemView)
-            case let .didMoveItem(menuItemView, previousMenuItemView):
-                print(previousMenuItemView)
-                print(menuItemView)
-            case .didScrollStart:
-                print("Scroll start")
-            case .didScrollEnd:
-                print("Scroll end")
-            }
-        }
         
         addChildViewController(pagingMenuController)
         view.addSubview(pagingMenuController.view)
@@ -97,10 +76,9 @@ extension PagingMenuControllerCustomizable {
     func getLayoutHeight() -> CGFloat {
         switch UIScreen.main.nativeBounds.height {
         case 2436:
-            print("iPhone X")
+            // iPhone X:
             return 90
         default:
-            print("unknown")
             return 64
         }
     }

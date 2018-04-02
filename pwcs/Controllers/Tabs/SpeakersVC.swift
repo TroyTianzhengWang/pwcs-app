@@ -102,26 +102,6 @@ class SpeakersVC: UIViewController {
         let pagingMenuController = PagingMenuController(options: options)
         pagingMenuController.view.frame.origin.y += options.getLayoutHeight()
         pagingMenuController.view.frame.size.height -= options.getLayoutHeight()
-        pagingMenuController.onMove = { state in
-            switch state {
-            case let .willMoveController(menuController, previousMenuController):
-                print(previousMenuController)
-                print(menuController)
-            case let .didMoveController(menuController, previousMenuController):
-                print(previousMenuController)
-                print(menuController)
-            case let .willMoveItem(menuItemView, previousMenuItemView):
-                print(previousMenuItemView)
-                print(menuItemView)
-            case let .didMoveItem(menuItemView, previousMenuItemView):
-                print(previousMenuItemView)
-                print(menuItemView)
-            case .didScrollStart:
-                print("Scroll start")
-            case .didScrollEnd:
-                print("Scroll end")
-            }
-        }
         
         addChildViewController(pagingMenuController)
         view.addSubview(pagingMenuController.view)

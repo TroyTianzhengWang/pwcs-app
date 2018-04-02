@@ -52,8 +52,10 @@ class PanelTitleCell: UITableViewCell {
     
     func setUpImage(_ panel: Panel) {
         panelImage.image = panel.background
-        panelImage.layer.cornerRadius = 6.0
-        panelImage.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+        if #available(iOS 11.0, *) {
+            panelImage.layer.cornerRadius = 6.0
+            panelImage.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+        }
         panelImage.clipsToBounds = true
         panelImage.snp.makeConstraints{(make) -> Void in
             make.top.equalTo(bgView)
