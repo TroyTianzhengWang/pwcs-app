@@ -68,37 +68,13 @@ extension SpeakerVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return getCellHeight(desc: speaker!.desc);
+//        let desc = speaker!.desc
+//        if (desc.containsChineseCharacters) {
+//
+//        }
+        return CGFloat(350 + speaker!.desc.dynamicHeight(font: UIFont(font: .avenirNextRegular, size: 15)!, width: UIScreen.main.bounds.width - 70))
     }
-    
-    private func getCellHeight(desc: String) -> CGFloat {
-        let screenWidth:CGFloat = UIScreen.main.bounds.width
-        let descLength = CGFloat(desc.count)
-        var numberOfCharacters = CGFloat(1.0)
-        if (desc.containsChineseCharacters) {
-            if (descLength > 420) {
-                numberOfCharacters = CGFloat(screenWidth / 20)
-            } else {
-                numberOfCharacters = CGFloat(screenWidth / 25)
-            }
-        } else {
-            if (descLength > 300) {
-                numberOfCharacters = CGFloat(screenWidth / 10)
-            } else {
-                numberOfCharacters = CGFloat(screenWidth / 12)
-            }
-        }
-        if (screenWidth < 350) {
-            if (desc.containsChineseCharacters) {
-                return CGFloat(290 + descLength / numberOfCharacters * 20) + 20
-            } else {
-                return CGFloat(290 + descLength / numberOfCharacters * 20) + 50
-            }
-        }
-        return CGFloat(290 + descLength / numberOfCharacters * 20)
-    }
-    
-    
+
 }
 
 extension String {
