@@ -58,12 +58,12 @@ class PanelCell: UICollectionViewCell {
     func setUpName(_ panel: Panel) {
         panelName.text = panel.name
         panelName.textAlignment = .left
-        panelName.font = UIFont(font: .avenirNextCondensedDemiBold, size: 30)
+        panelName.font = UIFont(font: .avenirNextCondensedDemiBold, size: 24)
         self.addSubview(panelName)
         panelName.snp.makeConstraints{ (make) -> Void in
             make.left.equalTo(self).offset(10)
             make.top.equalTo(panelTime).offset(25)
-            make.height.equalTo(35)
+            make.height.equalTo(28)
             make.width.equalTo(self).offset(20)
         }
     }
@@ -75,7 +75,7 @@ class PanelCell: UICollectionViewCell {
         self.addSubview(panelLocation)
         panelLocation.snp.makeConstraints{ (make) -> Void in
             make.left.equalTo(self).offset(10)
-            make.top.equalTo(panelName).offset(40)
+            make.top.equalTo(panelName.snp.bottom).offset(5)
             make.height.equalTo(20)
             make.width.equalTo(self).offset(20)
         }

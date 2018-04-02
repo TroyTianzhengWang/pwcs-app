@@ -56,7 +56,7 @@ class EventTitleCell: UITableViewCell {
     func setUpImage(_ event: Event) {
         eventImage.image = event.background
         eventImage.layer.cornerRadius = 6.0
-        eventImage.layer.masksToBounds = true
+        eventImage.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
         eventImage.clipsToBounds = true
         eventImage.snp.makeConstraints{(make) -> Void in
             make.top.equalTo(bgView)
@@ -101,7 +101,7 @@ class EventTitleCell: UITableViewCell {
         eventDesc.font = UIFont(font: .avenirNextRegular, size: 15)
         eventDesc.lineBreakMode = .byWordWrapping
         eventDesc.textAlignment = .justified
-        eventDesc.numberOfLines = 5
+        eventDesc.numberOfLines = 0
         eventDesc.snp.makeConstraints{(make) -> Void in
             make.top.equalTo(eventLocation.snp.bottom).offset(3)
             make.left.equalTo(bgView).offset(10)

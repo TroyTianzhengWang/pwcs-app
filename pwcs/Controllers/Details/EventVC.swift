@@ -95,7 +95,7 @@ extension EventVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if (indexPath.section == 0) {
-            return 460
+            return 400 + (event?.desc.dynamicHeight(font: UIFont(font: .avenirNextRegular, size: 15)!, width: UIScreen.main.bounds.width - 40))!
         } else if (indexPath.section == 1) {
             return 200
         }

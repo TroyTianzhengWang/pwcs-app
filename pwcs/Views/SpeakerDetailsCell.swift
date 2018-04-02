@@ -69,7 +69,7 @@ class SpeakerDetailsCell: UITableViewCell {
     func setUpSpeakerName() {
         bgView.addSubview(speakerName)
         speakerName.text = speaker.name
-        speakerName.font = UIFont(font: .avenirNextMedium, size: 25)
+        speakerName.font = UIFont(font: .avenirNextMedium, size: 23)
         speakerName.snp.makeConstraints{(make) -> Void in
             make.top.equalTo(speakerImage.snp.bottom).offset(15)
             make.left.equalTo(bgView)
@@ -82,12 +82,13 @@ class SpeakerDetailsCell: UITableViewCell {
     func setUpSpeakerTitle() {
         bgView.addSubview(speakerTitle)
         speakerTitle.text = speaker.title
+        speakerTitle.numberOfLines = 0
         speakerTitle.font = UIFont(font: .avenirNextRegular, size: 18)
         speakerTitle.snp.makeConstraints{(make) -> Void in
-            make.top.equalTo(speakerName.snp.bottom).offset(5)
-            make.left.equalTo(bgView)
-            make.right.equalTo(bgView)
-            make.height.equalTo(20)
+            make.top.equalTo(speakerName.snp.bottom).offset(10)
+            make.left.equalTo(bgView).offset(30)
+            make.right.equalTo(bgView).offset(-30)
+            make.height.equalTo(50)
         }
         speakerTitle.textAlignment = .center
     }
@@ -97,10 +98,10 @@ class SpeakerDetailsCell: UITableViewCell {
         speakerDesc.text = speaker.desc
         speakerDesc.font = UIFont(font: .avenirNextRegular, size: 15)
         speakerDesc.snp.makeConstraints{(make) -> Void in
-            make.top.equalTo(speakerTitle.snp.bottom).offset(15)
+            make.top.equalTo(speakerTitle.snp.bottom).offset(10)
             make.left.equalTo(bgView).offset(20)
             make.right.equalTo(bgView).offset(-20)
-            make.bottom.equalTo(bgView).offset(-20)
+            make.bottom.equalTo(bgView).offset(-10)
         }
         speakerDesc.lineBreakMode = .byWordWrapping
         speakerDesc.textAlignment = .justified

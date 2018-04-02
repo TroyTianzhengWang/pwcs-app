@@ -26,7 +26,7 @@
                   moduleName = "SwiftIcons"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/zhileizheng/projects/Ongoing/pwcs/Pods/SwiftIcons/Source/SwiftIcons.swift"
-                  timestampString = "544227075.512849"
+                  timestampString = "544335758.340289"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "180"
@@ -41,7 +41,7 @@
                   moduleName = "SwiftIcons"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/zhileizheng/projects/Ongoing/pwcs/Pods/SwiftIcons/Source/SwiftIcons.swift"
-                  timestampString = "544227075.515573"
+                  timestampString = "544335758.34293"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "180"
@@ -56,7 +56,7 @@
                   moduleName = "SwiftIcons"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/zhileizheng/projects/Ongoing/pwcs/Pods/SwiftIcons/Source/SwiftIcons.swift"
-                  timestampString = "544227075.520233"
+                  timestampString = "544335758.345759"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "180"
@@ -71,7 +71,7 @@
                   moduleName = "SwiftIcons"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/zhileizheng/projects/Ongoing/pwcs/Pods/SwiftIcons/Source/SwiftIcons.swift"
-                  timestampString = "544227075.523102"
+                  timestampString = "544335758.348258"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "180"
@@ -86,7 +86,7 @@
                   moduleName = "SwiftIcons"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/zhileizheng/projects/Ongoing/pwcs/Pods/SwiftIcons/Source/SwiftIcons.swift"
-                  timestampString = "544227075.525584"
+                  timestampString = "544335758.353472"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "181"
@@ -103,7 +103,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "pwcs/Views/SpeakerDetailsCell.swift"
-            timestampString = "543206988.197937"
+            timestampString = "544335758.09542"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "27"
@@ -119,7 +119,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "pwcs/Controllers/Details/SpeakerVC.swift"
-            timestampString = "544227075.05698"
+            timestampString = "544335758.095546"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "63"
@@ -135,13 +135,93 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "pwcs/Controllers/Details/EventVC.swift"
-            timestampString = "544227075.057476"
+            timestampString = "544335758.095642"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "82"
             endingLineNumber = "82"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "pwcs/Views/SpeakerDetailsCell.swift"
+            timestampString = "544335758.095804"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "86"
+            endingLineNumber = "86"
+            landmarkName = "setUpSpeakerTitle()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "pwcs/Views/SpeakerDetailsCell.swift"
+            timestampString = "544335758.095881"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
+            landmarkName = "setUpSpeakerTitle()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "pwcs/Views/SpeakerDetailsCell.swift"
+            timestampString = "544335758.09604"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
+            landmarkName = "setUpSpeakerTitle()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "pwcs.SpeakerDetailsCell.setUpSpeakerTitle() -&gt; ()"
+                  moduleName = "pwcs"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhileizheng/projects/Ongoing/pwcs/pwcs/Views/SpeakerDetailsCell.swift"
+                  timestampString = "544325491.1938339"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "87"
+                  endingLineNumber = "87"
+                  offsetFromSymbolStart = "591">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (SnapKit.ConstraintMaker) -&gt; () in pwcs.SpeakerDetailsCell.setUpSpeakerTitle() -&gt; ()"
+                  moduleName = "pwcs"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhileizheng/projects/Ongoing/pwcs/pwcs/Views/SpeakerDetailsCell.swift"
+                  timestampString = "544325491.199385"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "88"
+                  endingLineNumber = "88"
+                  offsetFromSymbolStart = "21">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

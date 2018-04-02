@@ -16,8 +16,10 @@ struct Panel {
     var background:UIImage
     var desc:String
     var speakers:[String]
+    var type:PanelType
     
-    init(name:String, location:LocationType, time:String, background:UIImage, desc:String) {
+    init(type:PanelType, name:String, location:LocationType, time:String, background:UIImage, desc:String) {
+        self.type = type
         self.name = name
         self.location = location
         self.time = time

@@ -53,7 +53,7 @@ class PanelTitleCell: UITableViewCell {
     func setUpImage(_ panel: Panel) {
         panelImage.image = panel.background
         panelImage.layer.cornerRadius = 6.0
-        panelImage.layer.masksToBounds = true
+        panelImage.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
         panelImage.clipsToBounds = true
         panelImage.snp.makeConstraints{(make) -> Void in
             make.top.equalTo(bgView)
@@ -98,7 +98,7 @@ class PanelTitleCell: UITableViewCell {
         panelDesc.font = UIFont(font: .avenirNextRegular, size: 15)
         panelDesc.lineBreakMode = .byWordWrapping
         panelDesc.textAlignment = .justified
-        panelDesc.numberOfLines = 5
+        panelDesc.numberOfLines = 0
         panelDesc.snp.makeConstraints{(make) -> Void in
             make.top.equalTo(panelLocation.snp.bottom).offset(3)
             make.left.equalTo(bgView).offset(10)
@@ -115,4 +115,15 @@ class PanelTitleCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
 
+}
+
+extension UIView {
+    
+    func roundCorners(_ corners: UIRectCorner, radius: CGFloat) {
+        let path = UIBezierPath(roundedRect: self.bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
+        let mask = CAShapeLayer()
+        mask.path = path.cgPath
+        self.layer.mask = mask
+    }
+    
 }

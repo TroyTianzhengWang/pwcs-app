@@ -30,3 +30,20 @@
 "opening" = "Opening Ceremony";
 "closing" = "Closing Ceremony";
 
+"fri-press" = "Press Release";
+"fri-registration" = "Audience Registration";
+"fri-career" = "Career Panel";
+
+"sat-registration" = "General Registration";
+"sat-opening-panel" = "Opening Ceremony";
+"sat-estate-panel" = "Panel: Real Estate";
+"sat-invest-panel" = "Panel: Investment";
+"sat-ir-panel" = "Panel: International Relations";
+"sat-fashion-panel" = "Panel: Fashion and Entertainment";
+"sat-career-fair" = "Career Fair";
+"sat-inno-talk" = "INNO Talk";
+"sat-social-inno" = "Social Innovation Event";
+"sat-cssap-session" = "CSSAP Alumni Session";
+"sat-social-banquet" = "Social Banquet";
+
+

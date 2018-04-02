@@ -17,7 +17,8 @@ class PanelSpeakerCell: UITableViewCell {
     
     var speaker = Speaker(name: "Chen Man", title: "Famous Photoagrapher", desc: "CEO of EHouse China", img: #imageLiteral(resourceName: "manchen"), panelType: PanelType.special)
     
-    func setUpView() {
+    func setUpView(with speaker: Speaker) {
+        self.speaker = speaker
         self.addSubview(bgView)
         bgView.addSubview(speakerImage)
         bgView.addSubview(speakerName)
@@ -71,7 +72,7 @@ class PanelSpeakerCell: UITableViewCell {
     }
     
     func setUpDesc() {
-        speakerDesc.text = speaker.desc
+        speakerDesc.text = speaker.title
         speakerDesc.font = UIFont(font: .avenirNextRegular, size: 15)
         speakerDesc.snp.makeConstraints{(make) -> Void in
             make.left.equalTo(speakerImage.snp.right).offset(20)

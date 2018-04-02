@@ -15,15 +15,24 @@ class PanelVC: UIViewController {
     
     var tableView = UITableView()
     
-    var panel = Panel(name: "Finance Panel", location: LocationType.annenburgCenter, time: "April 14th, 11:00AM - 2:00PM", background:#imageLiteral(resourceName: "panelimg"), desc: "For the past decade, low real interest rates, declining productivity growth, and lack of attractive domestic investment opportunities have forced global investors to seek higher returns in less familiar territories. ")
+    var panel = Panel(type: .finance, name: "Finance Panel", location: LocationType.annenburgCenter, time: "April 14th, 11:00AM - 2:00PM", background:#imageLiteral(resourceName: "panelimg"), desc: "For the past decade, low real interest rates, declining productivity growth, and lack of attractive domestic investment opportunities have forced global investors to seek higher returns in less familiar territories. ")
+    
+    var speakers = [Speaker]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setUpBackground()
-        setUpTableView()
         let rightButton = UIBarButtonItem()
         rightButton.setIcon(icon: .ionicons(.map), iconSize: 25, color: .red, cgRect: CGRect(x: 10, y: 5, width: 25, height: 25), target: self, action: #selector(addTapped))
         navigationItem.rightBarButtonItem = rightButton
+        self.navigationController?.navigationBar.tintColor = .red
+    }
+    
+    func setUpForPanel(panel: Panel) {
+        self.panel = panel
+        speakers = DataServices.shared.getSpeakers(for: panel.type)
+        setUpBackground()
+        setUpTableView()
+        tableView.allowsSelection = false;
     }
     
     @objc func addTapped() {
@@ -75,7 +84,7 @@ extension PanelVC: UITableViewDelegate, UITableViewDataSource {
         } else if (section == 1) {
             return 1
         } else if (section == 2) {
-            return 6
+            return speakers.count
         }
         return 0
     }
@@ -88,12 +97,12 @@ extension PanelVC: UITableViewDelegate, UITableViewDataSource {
             }
         } else if (indexPath.section == 1) {
             if let cell = tableView.dequeueReusableCell(withIdentifier: "map") as? PanelMapCell {
-                cell.setUpView()
+                cell.setUpView(with: panel)
                 return cell
             }
         } else {
             if let cell = tableView.dequeueReusableCell(withIdentifier: "speaker") as? PanelSpeakerCell {
-                cell.setUpView()
+                cell.setUpView(with: speakers[indexPath.row])
                 return cell
             }
         }
@@ -102,7 +111,7 @@ extension PanelVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if (indexPath.section == 0) {
-            return 460
+            return 400 + panel.desc.dynamicHeight(font: UIFont(font: .avenirNextRegular, size: 15)!, width: UIScreen.main.bounds.width - 40)
         } else if (indexPath.section == 1) {
             return 200
         } else {
@@ -116,4 +125,13 @@ extension PanelVC: UITableViewDelegate, UITableViewDataSource {
         }
     }
     
+}
+
+extension String {
+    // https://stackoverflow.com/questions/34262863/how-to-calculate-height-of-a-string
+    func dynamicHeight(font: UIFont, width: CGFloat) -> CGFloat{
+        let calString = NSString(string: self)
+        let textSize = calString.boundingRect(with: CGSize(width: width, height: CGFloat(MAXFLOAT)), options: [.usesLineFragmentOrigin, .usesFontLeading], attributes: [NSAttributedStringKey.font: font], context: nil)
+        return textSize.height
+    }
 }

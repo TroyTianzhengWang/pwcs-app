@@ -11,7 +11,6 @@
     </dependencies>
     <customFonts key="customFonts">
         <array key="AvenirNext.ttc">
-            <string>AvenirNext-DemiBold</string>
             <string>AvenirNext-UltraLightItalic</string>
         </array>
     </customFonts>
@@ -31,8 +30,8 @@
                                     <constraint firstAttribute="height" constant="200" id="jOl-B4-h6S"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Designed by Mindy Ma, Implemented by Zhilei Zheng. Property of Penn Wharton China Summit" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZR0-O4-l4J">
-                                <rect key="frame" x="87" y="517" width="200" height="100"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Official App of Penn Wharton China Summit 2018" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZR0-O4-l4J">
+                                <rect key="frame" x="87.5" y="517" width="200" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="5Ur-YJ-N1v"/>
                                     <constraint firstAttribute="width" constant="200" id="rr7-VY-HNc"/>
@@ -41,23 +40,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Penn Wharton China Summit" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q9S-lp-GlI">
-                                <rect key="frame" x="87" y="310" width="200" height="80"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="F4M-3g-O8A"/>
-                                    <constraint firstAttribute="height" constant="80" id="gRa-dP-1ca"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="25"/>
-                                <color key="textColor" red="0.78839737176895142" green="0.24249744415283203" blue="0.18949633836746216" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="tkH-5K-fvZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="8LS-67-TZ1"/>
-                            <constraint firstItem="q9S-lp-GlI" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="HzJ-PH-8vG"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ZR0-O4-l4J" secondAttribute="bottom" constant="50" id="Jhy-ca-PoE"/>
-                            <constraint firstItem="q9S-lp-GlI" firstAttribute="top" secondItem="tkH-5K-fvZ" secondAttribute="bottom" constant="10" id="bBn-6P-ggt"/>
                             <constraint firstItem="ZR0-O4-l4J" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="lgf-cF-SiJ"/>
                             <constraint firstItem="tkH-5K-fvZ" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ygO-hg-dsH"/>
                         </constraints>
