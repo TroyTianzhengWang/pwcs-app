@@ -136,7 +136,16 @@ class DataServices {
     }
     
     private func readInFAQ() {
-        faq["My Question"] = "My Answer"
+        faq["请问All-inclusive Student和All-inclusive Professional有什么区别吗？"] = "All-inclusive Student Ticket是主办方为在校学生设置的Discounted Ticket, 须在检票时出示学生证。"
+        faq["请问不是Upenn的学生可以购买Student Ticket吗？"] = "所有在校学生都可以购买Student Ticket，注册时需出示学生证。"
+        faq["请问购票后是否能退款？"] = "Penn Wharton China Summit不提供退款。"
+        faq["请问购票后，是否可以转让给他人？"] = "可以。但Student Ticket只能转让给学生。"
+        faq["请问注册时间是什么时候？"] = "提前注册 Early Registration: 4/13/2018 Friday 2:00PM-6:00PM\n常规注册 Regular Registration: 4/14/2018 Saturday 8:00AM-10:00AM\n延迟注册 Late Registration: 4/14/2018 Sunday 10:00AM-1:00PM"
+        faq["请问注册地点在哪儿？"] = "提前注册 Early Registration：The Inn at Penn, 2nd Floor\nAddress: 3600 Sansom St, Philadelphia, PA 19104\n\n常规注册 Regular Registration & 延迟注册 Regular Registration: Houston Hall, 1st Floor, Bodek Lounge\nAddress: 3417 Spruce St, Philadelphia, PA 19104"
+        faq["请问注册流程是什么？"] = "请将确认邮件中的门票打印，带到注册现场（如果购买Student Ticket，请带上您的Student ID）：\n(1) 在工作人员的协助下在指定区域排队；\n(2）在工作桌处出示门票，扫描二维码；\n(3）扫描门票后，领取胸牌作为入场凭证；\n(4）领取峰会相关资料。"
+        faq["请问没能参加注册怎么办？"] = "请购买All-Inclusive 和Saturday Pass观众，按照注册时间在指定地点进行注册；如果错过注册，请持门票在活动场地外直接注册；\n请购买Sunday Pass的观众可持门票在活动场地外直接注册。"
+        faq["请问活动场地在哪儿？"] = "Sheraton in University City\nAddress: 3549 Chestnut St, Philadelphia, PA 19104\n\nHilton Inn at Penn\nAddress: 3600 Sansom St, Philadelphia, PA 19104\n\nHouston Hall\nAddress: 3417 Spruce St, Philadelphia, PA 19104\n\nIrvine Auditorium\nAddress: 3401 Spruce St, Philadelphia, PA 19104\n\nAnnenberg Center\nAddress: 3680 Walnut St, Philadelphia, PA 19104\n\nThe Study at University City\nAddress: 20 S 33rd St, Philadelphia, PA 19104\n\nPhiladelphia Downtown Marriott\nAddress: 1201 Market Street, Philadelphia, PA 19107"
+        faq["请问参加活动有着装要求吗？"] = "无强制着装要求，但建议穿着Business Causal & Formal；如您要参加菁英派对，可穿着Party Wear。"
     }
     
     public func getFAQs() -> [(question: String, answer: String)] {
