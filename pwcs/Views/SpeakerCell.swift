@@ -9,6 +9,7 @@
 import UIKit
 import SnapKit
 import UIFontComplete
+import Kingfisher
 
 class SpeakerCell: UICollectionViewCell {
     
@@ -25,7 +26,8 @@ class SpeakerCell: UICollectionViewCell {
     }
     
     func setUpImg(_ speaker: Speaker) {
-        speakerImg.image = speaker.img
+        let url = URL(string: speaker.imgUrl)
+        speakerImg.kf.setImage(with: url)
         self.addSubview(speakerImg)
         speakerImg.snp.makeConstraints{ (make) -> Void in
             make.top.equalTo(20)

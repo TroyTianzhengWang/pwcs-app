@@ -12,5 +12,6 @@ target 'pwcs' do
   pod "PagingMenuController"
   pod 'UIFontComplete'
   pod "TimelineTableViewCell"
+  pod 'Kingfisher', '~> 4.0'
   pod 'Savory', :git => 'https://github.com/Nandiin/Savory.git'
 end

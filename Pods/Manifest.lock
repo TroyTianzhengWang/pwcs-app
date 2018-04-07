@@ -1,4 +1,5 @@
 PODS:
+  - Kingfisher (4.6.1)
   - PagingMenuController (2.2.0)
   - Savory (0.1.1)
   - SnapKit (4.0.0)
@@ -8,6 +9,7 @@ PODS:
   - UIFontComplete (3.0.0)
 
 DEPENDENCIES:
+  - Kingfisher (~> 4.0)
   - PagingMenuController
   - Savory (from `https://github.com/Nandiin/Savory.git`)
   - SnapKit (~> 4.0.0)
@@ -26,6 +28,7 @@ CHECKOUT OPTIONS:
     :git: https://github.com/Nandiin/Savory.git
 
 SPEC CHECKSUMS:
+  Kingfisher: 1f9157d9c02b380cbd0b7cc890161195164eb634
   PagingMenuController: 6176618987bb170096664f2da097313e45ed9c31
   Savory: 5523392d8a76d995812809ae31499d69aaa03305
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
@@ -34,6 +37,6 @@ SPEC CHECKSUMS:
   TimelineTableViewCell: 71a4bc787bfeb5a85083171d18b113a5f5db2be8
   UIFontComplete: 5b0f59a83308816c610164b79a2540b3520f9b72
 
-PODFILE CHECKSUM: 3426292a655c5369e77f64a69f403195f1fc5b96
+PODFILE CHECKSUM: e86bef19652181a74a774961ed45ef43b9111d81
 
 COCOAPODS: 1.4.0
