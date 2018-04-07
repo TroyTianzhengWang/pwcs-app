@@ -16,7 +16,7 @@ class PanelSpeakerCell: UITableViewCell {
     var speakerName = UILabel()
     var speakerDesc = UILabel()
     
-    var speaker = Speaker(name: "Chen Man", title: "Famous Photoagrapher", desc: "CEO of EHouse China", img: #imageLiteral(resourceName: "manchen"), panelType: PanelType.special)
+    var speaker = Speaker(name: "Chen Man", title: "Famous Photoagrapher", desc: "CEO of EHouse China", panelType: PanelType.special, imgUrl: "https://s3.amazonaws.com/pwcs2018/manchen.png")
     
     func setUpView(with speaker: Speaker) {
         self.speaker = speaker

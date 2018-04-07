@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F5FCDF189BC874C2D49CC44FFE16760E"
+               BlueprintIdentifier = "6EF25FC303A37A5B022D3042314BCBFA"
                BlueprintName = "Savory"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "Savory.framework">
