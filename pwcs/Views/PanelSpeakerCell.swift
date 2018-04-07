@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class PanelSpeakerCell: UITableViewCell {
     
@@ -48,7 +49,8 @@ class PanelSpeakerCell: UITableViewCell {
     }
     
     func setUpImage() {
-        speakerImage.image = speaker.img
+        let url = URL(string: speaker.imgUrl)
+        speakerImage.kf.setImage(with: url)
         speakerImage.layer.cornerRadius = 35
         speakerImage.layer.masksToBounds = true
         speakerImage.clipsToBounds = true

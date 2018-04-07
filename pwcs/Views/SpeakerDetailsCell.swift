@@ -8,6 +8,7 @@
 
 import UIKit
 import UIFontComplete
+import Kingfisher
 
 class SpeakerDetailsCell: UITableViewCell {
     
@@ -53,7 +54,8 @@ class SpeakerDetailsCell: UITableViewCell {
     
     func setUpSpeakerImg() {
         bgView.addSubview(speakerImage)
-        speakerImage.image = speaker.img
+        let url = URL(string: speaker.imgUrl)
+        speakerImage.kf.setImage(with: url)
         speakerImage.snp.makeConstraints{(make) -> Void in
             make.width.height.equalTo(110)
             make.centerX.equalTo(bgView)

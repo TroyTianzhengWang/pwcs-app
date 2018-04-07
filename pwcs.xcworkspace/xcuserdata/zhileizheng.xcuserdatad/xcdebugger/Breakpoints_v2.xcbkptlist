@@ -17,83 +17,6 @@
             endingLineNumber = "167"
             landmarkName = "UILabel"
             landmarkType = "21">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "default argument 1 of (extension in SwiftIcons):__ObjC.UILabel.setIcon(prefixText: Swift.String, prefixTextColor: __ObjC.UIColor, icon: Swift.Optional&lt;SwiftIcons.FontType&gt;, iconColor: __ObjC.UIColor, postfixText: Swift.String, postfixTextColor: __ObjC.UIColor, size: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, iconSize: Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; ()"
-                  moduleName = "SwiftIcons"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zhileizheng/projects/Ongoing/pwcs/Pods/SwiftIcons/Source/SwiftIcons.swift"
-                  timestampString = "544414395.65837"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "180"
-                  endingLineNumber = "180"
-                  offsetFromSymbolStart = "4">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "default argument 3 of (extension in SwiftIcons):__ObjC.UILabel.setIcon(prefixText: Swift.String, prefixTextColor: __ObjC.UIColor, icon: Swift.Optional&lt;SwiftIcons.FontType&gt;, iconColor: __ObjC.UIColor, postfixText: Swift.String, postfixTextColor: __ObjC.UIColor, size: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, iconSize: Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; ()"
-                  moduleName = "SwiftIcons"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zhileizheng/projects/Ongoing/pwcs/Pods/SwiftIcons/Source/SwiftIcons.swift"
-                  timestampString = "544414395.663314"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "180"
-                  endingLineNumber = "180"
-                  offsetFromSymbolStart = "4">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "default argument 5 of (extension in SwiftIcons):__ObjC.UILabel.setIcon(prefixText: Swift.String, prefixTextColor: __ObjC.UIColor, icon: Swift.Optional&lt;SwiftIcons.FontType&gt;, iconColor: __ObjC.UIColor, postfixText: Swift.String, postfixTextColor: __ObjC.UIColor, size: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, iconSize: Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; ()"
-                  moduleName = "SwiftIcons"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zhileizheng/projects/Ongoing/pwcs/Pods/SwiftIcons/Source/SwiftIcons.swift"
-                  timestampString = "544414395.6671309"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "180"
-                  endingLineNumber = "180"
-                  offsetFromSymbolStart = "4">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "default argument 7 of (extension in SwiftIcons):__ObjC.UILabel.setIcon(prefixText: Swift.String, prefixTextColor: __ObjC.UIColor, icon: Swift.Optional&lt;SwiftIcons.FontType&gt;, iconColor: __ObjC.UIColor, postfixText: Swift.String, postfixTextColor: __ObjC.UIColor, size: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, iconSize: Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; ()"
-                  moduleName = "SwiftIcons"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zhileizheng/projects/Ongoing/pwcs/Pods/SwiftIcons/Source/SwiftIcons.swift"
-                  timestampString = "544414395.670478"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "180"
-                  endingLineNumber = "180"
-                  offsetFromSymbolStart = "4">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(extension in SwiftIcons):__ObjC.UILabel.setIcon(prefixText: Swift.String, prefixTextColor: __ObjC.UIColor, icon: Swift.Optional&lt;SwiftIcons.FontType&gt;, iconColor: __ObjC.UIColor, postfixText: Swift.String, postfixTextColor: __ObjC.UIColor, size: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, iconSize: Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; ()"
-                  moduleName = "SwiftIcons"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zhileizheng/projects/Ongoing/pwcs/Pods/SwiftIcons/Source/SwiftIcons.swift"
-                  timestampString = "544414395.672966"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "181"
-                  endingLineNumber = "181"
-                  offsetFromSymbolStart = "214">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -103,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "pwcs/Views/SpeakerDetailsCell.swift"
-            timestampString = "544393813.971301"
+            timestampString = "544760098.743685"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
             landmarkName = "setUpView(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -151,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "pwcs/Views/SpeakerDetailsCell.swift"
-            timestampString = "544393813.97154"
+            timestampString = "544760098.744871"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "86"
-            endingLineNumber = "86"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
             landmarkName = "setUpSpeakerTitle()"
             landmarkType = "7">
          </BreakpointContent>
@@ -167,27 +90,27 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "pwcs/Views/SpeakerDetailsCell.swift"
-            timestampString = "544393813.971603"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "85"
-            endingLineNumber = "85"
-            landmarkName = "setUpSpeakerTitle()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "pwcs/Views/SpeakerDetailsCell.swift"
-            timestampString = "544393813.97167"
+            timestampString = "544760098.74493"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "87"
             endingLineNumber = "87"
+            landmarkName = "setUpSpeakerTitle()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "pwcs/Views/SpeakerDetailsCell.swift"
+            timestampString = "544760098.744971"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
             landmarkName = "setUpSpeakerTitle()"
             landmarkType = "7">
             <Locations>
