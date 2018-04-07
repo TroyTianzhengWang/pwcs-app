@@ -12,7 +12,7 @@ import Kingfisher
 
 class SpeakerDetailsCell: UITableViewCell {
     
-    var speaker = Speaker(name: "Chen Man", title: "Famous Photographer", desc: "She is a photographer", img: #imageLiteral(resourceName: "manchen"), panelType: PanelType.closingCeremony)
+    var speaker = Speaker(name: "Chen Man", title: "Famous Photographer", desc: "She is a photographer", panelType: PanelType.closingCeremony, imgUrl: "https://s3.amazonaws.com/pwcs2018/manchen.png")
     
     var bgView = UIView()
     var speakerImage = UIImageView()
