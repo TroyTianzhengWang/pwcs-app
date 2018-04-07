@@ -34,6 +34,8 @@
 		CF573C74200C9E1600A980CC /* SpeakerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF573C73200C9E1600A980CC /* SpeakerVC.swift */; };
 		CF85C49C200CA16F008B02CB /* SpeakersListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85C49B200CA16F008B02CB /* SpeakersListVC.swift */; };
 		CF85C4A0200D0921008B02CB /* PanelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85C49F200D0921008B02CB /* PanelCell.swift */; };
+		CF8B94E520786B4300A6D905 /* CustomScheduleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8B94E420786B4300A6D905 /* CustomScheduleVC.swift */; };
+		CF8B94E720786B8200A6D905 /* CustomScheduleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8B94E620786B8200A6D905 /* CustomScheduleCell.swift */; };
 		CF8E1283204F23A300247531 /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8E1282204F23A300247531 /* AboutVC.swift */; };
 		CF95B7BE206FED76004080F7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF95B7C0206FED76004080F7 /* Localizable.strings */; };
 		CF95B7C420728298004080F7 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF95B7C320728298004080F7 /* Enums.swift */; };
@@ -76,6 +78,8 @@
 		CF573C73200C9E1600A980CC /* SpeakerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerVC.swift; sourceTree = "<group>"; };
 		CF85C49B200CA16F008B02CB /* SpeakersListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakersListVC.swift; sourceTree = "<group>"; };
 		CF85C49F200D0921008B02CB /* PanelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelCell.swift; sourceTree = "<group>"; };
+		CF8B94E420786B4300A6D905 /* CustomScheduleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomScheduleVC.swift; sourceTree = "<group>"; };
+		CF8B94E620786B8200A6D905 /* CustomScheduleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomScheduleCell.swift; sourceTree = "<group>"; };
 		CF8E1282204F23A300247531 /* AboutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
 		CF95B7BF206FED76004080F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CF95B7C1206FEDBA004080F7 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
@@ -176,6 +180,7 @@
 				CFDB06F3205C58E600938500 /* EventTitleCell.swift */,
 				CFDB06F5205C58F800938500 /* EventMapCell.swift */,
 				CF95B7C52072B8B8004080F7 /* AboutCell.swift */,
+				CF8B94E620786B8200A6D905 /* CustomScheduleCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -219,6 +224,7 @@
 				CF573C6C200C9D4000A980CC /* PanelsVC.swift */,
 				CF85C49B200CA16F008B02CB /* SpeakersListVC.swift */,
 				CF8E1282204F23A300247531 /* AboutVC.swift */,
+				CF8B94E420786B4300A6D905 /* CustomScheduleVC.swift */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -403,7 +409,9 @@
 				CF12E9B620571BCE0069C71D /* PanelTitleCell.swift in Sources */,
 				CF573C55200C74DB00A980CC /* SpeakersVC.swift in Sources */,
 				CF573C53200C74BF00A980CC /* AgendaVC.swift in Sources */,
+				CF8B94E520786B4300A6D905 /* CustomScheduleVC.swift in Sources */,
 				CF12E9BA20571C150069C71D /* PanelMapCell.swift in Sources */,
+				CF8B94E720786B8200A6D905 /* CustomScheduleCell.swift in Sources */,
 				CF573C6F200C9D7600A980CC /* PanelVC.swift in Sources */,
 				CF001EED2013D4CB00EF7EAD /* Speaker.swift in Sources */,
 				CF573C72200C9DE900A980CC /* EventVC.swift in Sources */,

@@ -9,19 +9,29 @@
 import UIKit
 import PagingMenuController
 private struct PagingMenuOptions: PagingMenuControllerCustomizable {
-    private let viewController1 = ScheduleVC()
-    private let viewController2 = ScheduleVC()
-    private let viewController3 = ScheduleVC()
+    private var viewController1 = CustomScheduleVC()
+    private var viewController2 = CustomScheduleVC()
+    private var viewController3 = CustomScheduleVC()
     
     fileprivate var componentType: ComponentType {
         return .all(menuOptions: MenuOptions(), pagingControllers: pagingControllers)
     }
     
     fileprivate var pagingControllers: [UIViewController] {
-        viewController1.setUpDay(day: 0)
-        viewController2.setUpDay(day: 1)
-        viewController3.setUpDay(day: 2)
-        return [viewController1, viewController2, viewController3]
+        if #available(iOS 11.0, *) {
+            let vc1 = ScheduleVC()
+            let vc2 = ScheduleVC()
+            let vc3 = ScheduleVC()
+            vc1.setUpDay(day: 0)
+            vc2.setUpDay(day: 1)
+            vc3.setUpDay(day: 2)
+            return [vc1, vc2, vc3]
+        } else {
+            viewController1.setUpDay(day: 0)
+            viewController2.setUpDay(day: 1)
+            viewController3.setUpDay(day: 2)
+            return [viewController1, viewController2, viewController3]
+        }
     }
     
     fileprivate struct MenuOptions: MenuViewCustomizable {

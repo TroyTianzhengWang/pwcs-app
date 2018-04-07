@@ -158,7 +158,7 @@ class DataServices {
     
     private func readInSchedule() {
         schedules = [0:[
-            (TimelinePoint(), UIColor.black, "观众注册", "14:00 - 18:00\nHilton Inn At Penn\n观众至指定地点领取峰会手册，票据、名牌及纪念品。\nAudience register arrival with staff. Summit brochure, and badge will be distributed.", "", nil, "Sun"),
+            (TimelinePoint(), UIColor.black, "观众注册", "14:00 - 18:00\nHilton Inn At Penn\n观众至指定地点领取峰会手册，票据、名牌及纪念品。Audience register arrival with staff. Summit brochure, and badge will be distributed.", "", nil, "Sun"),
             (TimelinePoint(), UIColor.black, "媒体发布会", "16:00 - 18:00\nSheraton in University City\n媒体参与由峰会代表、沃顿校方代表组织的媒体发布会、媒体届时可以向峰会嘉宾代表及筹委会代表发问。\nPresentation by representatives from the Summit Board and the Wharton school to media.", "2 Hours", nil, "Sun"),
             (TimelinePoint(), UIColor.black, "职业发展论坛", "18:00 - 21:00\nHilton Inn At Penn\n由峰会筹委会代表，猎聘代表及北美电信代表携招聘企业HR／高管进行职业发展讲座。部分企业会进行招聘活动。\nPresentation by representatives from the Summit Board, Liepin and HR from participating companies.", "3 Hours", nil, "Sun")
             ], 1:[
