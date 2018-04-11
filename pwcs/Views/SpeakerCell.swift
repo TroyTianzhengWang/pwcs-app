@@ -26,6 +26,7 @@ class SpeakerCell: UICollectionViewCell {
     }
     
     func setUpImg(_ speaker: Speaker) {
+        speakerImg.image = #imageLiteral(resourceName: "default")
         let url = URL(string: speaker.imgUrl)
         speakerImg.kf.setImage(with: url)
         self.addSubview(speakerImg)

@@ -49,6 +49,7 @@ class PanelSpeakerCell: UITableViewCell {
     }
     
     func setUpImage() {
+        speakerImage.image = #imageLiteral(resourceName: "default")
         let url = URL(string: speaker.imgUrl)
         speakerImage.kf.setImage(with: url)
         speakerImage.layer.cornerRadius = 35

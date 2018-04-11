@@ -73,4 +73,5 @@ class FaqVC: UIViewController, SavoryViewDelegate {
         cell.textLabel?.text = questions[index].answer
         return cell
     }
+    
 }

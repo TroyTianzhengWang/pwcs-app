@@ -54,6 +54,7 @@ class SpeakerDetailsCell: UITableViewCell {
     
     func setUpSpeakerImg() {
         bgView.addSubview(speakerImage)
+        speakerImage.image = #imageLiteral(resourceName: "default")
         let url = URL(string: speaker.imgUrl)
         speakerImage.kf.setImage(with: url)
         speakerImage.snp.makeConstraints{(make) -> Void in

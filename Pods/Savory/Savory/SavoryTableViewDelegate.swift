@@ -28,12 +28,12 @@ class SavoryTableViewDelegate: NSObject, UITableViewDelegate {
             index = i
             if view.stateProvider[index] == .expanded {
                 view.savoryDelegate.willCollapse?(panelAt: index, in: view)
-                view.stateProvider[index] = !view.stateProvider[index]
+                view.stateProvider[index] = .collapsed
                 view.deleteRows(at: [pathToModify], with: .fade)
                 view.savoryDelegate.didCollapse?(panelAt: index, in: view)
             } else {
                 view.savoryDelegate.willExpand?(panelAt: index, in: view)
-                view.stateProvider[index] = !view.stateProvider[index]
+                view.stateProvider[index] = .expanded
                 view.insertRows(at: [pathToModify], with: .fade)
                 view.savoryDelegate.didExpand?(panelAt: index, in: view)
             }
